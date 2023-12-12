@@ -7,14 +7,12 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
           <Link to="#dsd" className="navbar-brand">
-            {/* <div className="overlay-div">
+            <div className="overlay-div">
               <img
                 src="https://i.postimg.cc/0NGVVycW/ASME-log.png"
-
                 alt="asme-logo"
               />
-              
-            </div> */}
+            </div>
           </Link>
           <button
             className="navbar-toggler "
