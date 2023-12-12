@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Roboto:wght@900&display=swap');
+
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* ==========================Footer========================= */
+
+.footerdiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-inline: 1%;
+    font-size: 14px;
+    
+   }
+  
+   .footerdiv1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 1%;
+    padding-top: 3%; 
+   }
+  
+   .footerdiv2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1%;
+    padding-top: 3%;
+   }
+  
+   
+    .footerdiv2 p{
+     font-size: smaller;
+    }
+  
+    .footerimg{
+     margin-bottom: 5%;
+    }
+  
+   .footerdiv1 img{
+    height: 20px;
+    margin-right: 12px;
+   }
+  
+   .copyright p{
+     margin-bottom: 0;
+     padding-bottom: 1%;
+   }
+  
+  
+   /* ==========================Header(Navbar)================== */
+   .navbar{
+    /* position: sticky; */
+     font-family:  'Poppins', sans-serif ;
+     font-size: 17px;
+     background: black !important;
+     /* background: linear-gradient(to right, black, #777) !important; */
+     line-height: 26px;
+     text-transform: uppercase;
+     /* box-shadow: 0 8px 6px -6px whitesmoke; */
+     --webkit-box-shadow: 0 8px 6px -6px background-color !important;
+     /* border-bottom: 1px solid #F8F8FF !important; */
+      
+   }
+  
+   .container-fluid{
+     position: relative;
+     height: 60px; 
+   }
+  
+   .overlay-div{
+     position: absolute;
+     top: 5px;  
+     left: 15px;  
+     background-color: white;  
+     /* padding: 10px;   */
+     /* border: 1px solid #ccc;   */
+     height: 150%;
+     width: 100px ;
+   }
+  
+    .overlay-div img{
+     height: 100%;
+     width: 100%;
+    }
+  
+   .nav-link{
+     font-weight: 300 !important;
+     color: white;
+   }
+   .nav-link:hover{
+     color: white;
+   }
+  
+   .active{
+     border-bottom: 2px solid white;
+     color: white !important;
+  
+   }
+  
+  

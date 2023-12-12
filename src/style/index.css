@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Roboto:wght@900&display=swap');
+
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ /* ==============================Page not found====================== */
+ .pnf{
+   display: flex;
+   min-height: 65vh;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .pnf-title{
+   font-size: 100px;
+   font-weight: 700;
+ }
+
+ .pnf-heading{
+   font-weight: normal;
+ }
+
+ .pnf-btn{
+   color: black;
+   border: 1px solid black;
+   text-decoration: none;
+   padding: 10px;
+   margin-top: 10px;
+ }
+
+ .pnf-btn:hover{
+   background-color: black;
+   color: white;
+ }
+
+  
+ .homepage{
+   background-color: black;
+   height: 80vh;
+ }
+
+
+ /* ===========================Homepage======================= */
+
+ .page {
+  background-image: url('https://i.postimg.cc/wvMVf9DR/Untitled.jpg'); /* Replace with your image URL */
+   background-size: cover;
+  background-position: center; 
+
+  
+  /* background-size: 100% 100%; */
+    
+  background-repeat: no-repeat;
+ 
+
+  height: 100vh;
+    
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   
+  background-color: black;
+
+  overflow: hidden;
+   
+  margin: 0;  
+  padding: 0;  
+  /* background-position-y: -100px;
+  background-position-x: 100px;  */
+  /* opacity: 0.8; */
+  
+
+  box-sizing: border-box; 
+}
+
+
+
+.content {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  width: 40%;
+
+  position: absolute;
+  bottom: 80px;
+  right: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.content h1{
+  font-size: 8vw;
+  font-weight: bolder;
+}
+
+.content p{
+  font-size: 1.5vw;
+}
+
+.gradient-text {
+  font-size: 3em; /* Set the desired font size */
+  background: linear-gradient(to bottom,   #884400, #FFFFFF); /* Set the gradient from golden to white */
+  -webkit-background-clip: text; /* Clip the text to the background */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  display: inline-block; /* Ensure gradient applies properly */
+  animation: shine 3s ease-in-out infinite !important;
+}
+ 
+
+
+ .change-text:after{
+  content:"NIT ROURKELA STUDENT CHAPTER";
+  animation: spin 3s linear infinite;
+ }
+
+ @keyframes spin{
+  0%{
+    content: "NIT ROURKELA STUDENT CHAPTER";
+  }
+  50%{
+    content:"WE MAKE HUMAN POWERED VEHICLES"
+  }
+
+ }
+
+
+ 
