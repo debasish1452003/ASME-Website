@@ -26,10 +26,10 @@ font-family: 'Roboto', sans-serif; */
 .page::before {
   content: "";
   background-image: url('https://i.postimg.cc/wvMVf9DR/Untitled.jpg');
-  /* Replace with your image URL */
+  
   background-size: cover;
   background-position: center;
-  /* background-size: 100% 100%; */
+  
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
@@ -39,14 +39,12 @@ font-family: 'Roboto', sans-serif; */
   background-color: black;
 
   overflow: hidden;
-  /* opacity: 0.5; */
+ 
   filter: blur(2px);
 
   margin: 0;
   padding: 0;
-  /* background-position-y: -100px;
-  background-position-x: 100px;  */
-  /* opacity: 0.8; */
+  
 
 
   box-sizing: border-box;
@@ -126,17 +124,12 @@ font-family: 'Roboto', sans-serif; */
 
 
 .swiper {
-  /* width: 1200px; */
+   
   width: 85%;
   height: 100%;
 }
 
-/* 
-font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif; */
 
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
 
 .notify {
   display: flex;
@@ -161,8 +154,7 @@ font-family: 'Roboto', sans-serif; */
 
 .mySwiper .swiper-button-prev,
 .mySwiper .swiper-button-next {
-  /* Your styles here */
-  /* color: black; */
+   
   height: 8%;
 }
 
@@ -170,10 +162,19 @@ font-family: 'Roboto', sans-serif; */
   background-position: center;
   background-size: cover;
   width: 300px;
-  /* width: 100%; */
+ 
   height: 300px;
-  /* height: 100%; */
+   
 }
+ 
+.swiper-pagination-bullet {
+  background-color: blue !important;   
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  opacity: 0.5 !important;  
+}
+
 
 .swiper-slide img {
   display: block;
