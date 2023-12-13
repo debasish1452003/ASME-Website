@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ASME-Website/static/css/main.0b2ac2d4.css",
-    "main.js": "/ASME-Website/static/js/main.2e0f1d9e.js",
-    "static/js/787.4c617d16.chunk.js": "/ASME-Website/static/js/787.4c617d16.chunk.js",
-    "index.html": "/ASME-Website/index.html",
-    "main.0b2ac2d4.css.map": "/ASME-Website/static/css/main.0b2ac2d4.css.map",
-    "main.2e0f1d9e.js.map": "/ASME-Website/static/js/main.2e0f1d9e.js.map",
-    "787.4c617d16.chunk.js.map": "/ASME-Website/static/js/787.4c617d16.chunk.js.map"
+    "main.css": "/static/css/main.658f8754.css",
+    "main.js": "/static/js/main.d37deeb5.js",
+    "static/js/787.4c617d16.chunk.js": "/static/js/787.4c617d16.chunk.js",
+    "index.html": "/index.html",
+    "main.658f8754.css.map": "/static/css/main.658f8754.css.map",
+    "main.d37deeb5.js.map": "/static/js/main.d37deeb5.js.map",
+    "787.4c617d16.chunk.js.map": "/static/js/787.4c617d16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b2ac2d4.css",
-    "static/js/main.2e0f1d9e.js"
+    "static/css/main.658f8754.css",
+    "static/js/main.d37deeb5.js"
   ]
 }
