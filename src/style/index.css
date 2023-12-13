@@ -8,83 +8,48 @@ font-family: 'Poppins', sans-serif; */
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
- *{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- }
-
- /* ==============================Page not found====================== */
- .pnf{
-   display: flex;
-   min-height: 65vh;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
- }
-
- .pnf-title{
-   font-size: 100px;
-   font-weight: 700;
- }
-
- .pnf-heading{
-   font-weight: normal;
- }
-
- .pnf-btn{
-   color: black;
-   border: 1px solid black;
-   text-decoration: none;
-   padding: 10px;
-   margin-top: 10px;
- }
-
- .pnf-btn:hover{
-   background-color: black;
-   color: white;
- }
-
-  
- .homepage{
-   background-color: black;
-   height: 80vh;
- }
+}
 
 
- /* ===========================Homepage======================= */
 
- .page {
-  background-image: url('https://i.postimg.cc/wvMVf9DR/Untitled.jpg'); /* Replace with your image URL */
-   background-size: cover;
-  background-position: center; 
+/* ===========================Homepage======================= */
 
-  
+.page {
+  position: relative;
+  background-color: black;
+}
+
+.page::before {
+  content: "";
+  background-image: url('https://i.postimg.cc/wvMVf9DR/Untitled.jpg');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
   /* background-size: 100% 100%; */
-    
   background-repeat: no-repeat;
- 
-
   height: 100vh;
-    
-  
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-   
   background-color: black;
 
   overflow: hidden;
-   
-  margin: 0;  
-  padding: 0;  
+  /* opacity: 0.5; */
+  filter: blur(2px);
+
+  margin: 0;
+  padding: 0;
   /* background-position-y: -100px;
   background-position-x: 100px;  */
   /* opacity: 0.8; */
-  
 
-  box-sizing: border-box; 
+
+  box-sizing: border-box;
 }
 
 
@@ -101,40 +66,59 @@ font-family: 'Roboto', sans-serif; */
   color: white;
 }
 
-.content h1{
+.content h1 {
   font-size: 8vw;
   font-weight: bolder;
 }
 
-.content p{
+.content p {
   font-size: 1.5vw;
 }
 
 .gradient-text {
-  font-size: 3em; /* Set the desired font size */
-  background: linear-gradient(to bottom,   #884400, #FFFFFF); /* Set the gradient from golden to white */
-  -webkit-background-clip: text; /* Clip the text to the background */
-  -webkit-text-fill-color: transparent; /* Make the text transparent */
-  display: inline-block; /* Ensure gradient applies properly */
-  animation: shine 3s ease-in-out infinite !important;
+  font-size: 3em;
+  /* Set the desired font size */
+  background: linear-gradient(to bottom, #884400, #FFFFFF);
+  /* Set the gradient from golden to white */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Clip the text to the background */
+  -webkit-text-fill-color: transparent;
+  /* Make the text transparent */
+  display: inline-block;
+  /* Ensure gradient applies properly */
+  /* animation: shine 3s ease-in-out infinite !important; */
 }
- 
 
 
- .change-text:after{
-  content:"NIT ROURKELA STUDENT CHAPTER";
+
+.change-text:after {
+  content: "NIT ROURKELA STUDENT CHAPTER";
   animation: spin 3s linear infinite;
- }
+}
 
- @keyframes spin{
-  0%{
+@keyframes spin {
+  0% {
     content: "NIT ROURKELA STUDENT CHAPTER";
   }
-  50%{
-    content:"WE MAKE HUMAN POWERED VEHICLES"
+
+  50% {
+    content: "WE MAKE HUMAN POWERED VEHICLES"
   }
 
- }
+}
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
 
+
+/* ===============================Swiper======================= */
 
  

@@ -16,7 +16,14 @@ font-family: 'Roboto', sans-serif; */
     width: 100%;
     padding-inline: 1%;
     font-size: 14px;
+     
     
+   }
+
+
+   .dummy{
+    position: absolute;
+    z-index: 2;
    }
   
    .footerdiv1{
@@ -59,7 +66,7 @@ font-family: 'Roboto', sans-serif; */
   
    /* ==========================Header(Navbar)================== */
    .navbar{
-    /* position: sticky; */
+     
      font-family:  'Poppins', sans-serif ;
      font-size: 17px;
      background: black !important;
@@ -84,8 +91,8 @@ font-family: 'Roboto', sans-serif; */
      background-color: white;  
      /* padding: 10px;   */
      /* border: 1px solid #ccc;   */
-     height: 150%;
-     width: 100px ;
+     height: 100%;
+     /* width: 100px ; */
    }
   
     .overlay-div img{
@@ -106,5 +113,43 @@ font-family: 'Roboto', sans-serif; */
      color: white !important;
   
    }
-  
+
+   
+/* ==============================Page not found====================== */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* 
+.homepage {
+  background-color: black;
+  height: 80vh;
+}
+   */
   
