@@ -6,10 +6,11 @@ const Header = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
-          <Link to="#dsd" className="navbar-brand">
+          <Link to="#" className="navbar-brand">
             <div className="overlay-div">
               <img
-                src="https://i.postimg.cc/0NGVVycW/ASME-log.png"
+                // src="https://i.postimg.cc/0NGVVycW/ASME-log.png"
+                src="https://i.postimg.cc/RVCw6ktN/Whats-App-Image-2023-12-12-at-4-12-10-PM.jpg"
                 alt="asme-logo"
               />
             </div>
