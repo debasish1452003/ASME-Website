@@ -114,17 +114,11 @@ font-family: 'Roboto', sans-serif; */
 /* ===============================Swiper======================= */
 
 
-
-
-.swiper {
+.notify .swiper {
 
     width: 85%;
     height: 100%;
 }
-
-
-
-
 
 .notify {
     display: flex;
@@ -147,13 +141,13 @@ font-family: 'Roboto', sans-serif; */
     margin-bottom: 100px;
 }
 
-.mySwiper .swiper-button-prev,
-.mySwiper .swiper-button-next {
+.notify .mySwiper .swiper-button-prev,
+.notify .mySwiper .swiper-button-next {
 
     height: 8%;
 }
 
-.swiper-slide {
+.notify .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
@@ -162,19 +156,18 @@ font-family: 'Roboto', sans-serif; */
 
 }
 
-.swiper-pagination-bullet {
+.notify .swiper-pagination-bullet {
     background-color: blue !important;
 }
 
-.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+.notify .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
     opacity: 0.5 !important;
 }
 
 
-.swiper-slide img {
+.notify .swiper-slide img {
     display: block;
     width: 100%;
-
 }
 
 /* ========================Projects========================= */
@@ -220,10 +213,10 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .project-desc {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    /* padding-inline: 100px; */
+    padding-inline: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
@@ -268,11 +261,14 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 120vh;
     background-color: black;
     color: white;
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
 
+}
+.events-container h1{
+    margin-bottom: 30px;
 }
 
 .events-content {
@@ -284,6 +280,7 @@ font-family: 'Roboto', sans-serif; */
 
 .events-content p {
     color: grey;
+    
 }
 
 .events-img {
@@ -335,3 +332,208 @@ font-family: 'Roboto', sans-serif; */
     background: linear-gradient(to right, black, grey);
 
 }
+
+/* ============================Achievements Section =========================== */
+.acheivements-container{
+    height: 90vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+ 
+.acheivements-container .swiper {
+    width: 90%;
+    height: 100%;
+  }
+  
+  .acheivements-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    height: 100%;
+  }
+  
+  .acheivements-container .swiper-slide img {
+    width: auto;
+    height: auto;
+    margin: 0px 30px;
+    max-width: 100%;
+    max-height: 100%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  .acheivements-container .swiper-pagination-bullet {
+    background-color: blue !important;
+}
+
+.acheivements-container .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    opacity: 0.5 !important;
+}
+
+  
+ .acheivements-container .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    margin-left: 50px;
+}
+
+/* ================================ Gallery ================================= */
+
+.gallery-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 170vh;
+    /* background: linear-gradient(to right, #ffafbd , #ffc3a0); */
+    background: linear-gradient(to right, whitesmoke, #ccc);
+    padding: 25px 0px;
+    
+    /* background-color: #ccc; */
+    
+     
+}
+
+.gallery-container h1{
+    font-family: sans-serif;
+     font-size: 70px;
+     padding-bottom: 50px;
+}
+.grid-container {
+    display: grid;
+    /* grid-template-columns: 1fr ;   */
+    grid-template-columns: repeat(12, 1fr); ; /* First two columns take different widths */
+    grid-template-rows: repeat(3, auto); /* Three rows */
+    gap: 10px; /* Spacing between grid items */
+    height: 100vh;
+    width: 60vw;
+    
+  }
+  .grid-item:hover{
+    cursor: pointer;
+  }
+  
+  .grid-item {
+    height: 300px; /* Set the height of grid items */
+    background-color: #ccc; /* Background color for visualization */
+  }
+
+  .grid-item img{
+    /* height: 150px; */
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Classes to define the widths of specific grid items */
+  .full-width {
+    grid-column: span 12; /* Spans across both columns */
+  }
+   
+  .large-width {
+    grid-column: span 8; /* Takes the width of 1 column */
+  }
+  
+  .small-width {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+    grid-column: span 4; /* Takes the width of 1 column */
+    background: linear-gradient(to bottom, rgb(23, 22, 22), #ccc);
+    
+    color: white;
+  }
+
+  .small-width:hover{
+    cursor: pointer;
+    /* background-color: rgb(69, 68, 68); */
+    background: linear-gradient(to top, grey, white);
+     
+    color: black;
+
+  }
+  
+  .equal-width {
+    grid-column: span 6; /* Takes the width of 1 column */
+  }
+  
+  /* ========================== Our Team ========================== */
+
+  .team-container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-box{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: 0px auto;
+    justify-content: center;
+  }
+  .team-img{
+    width: 50%;
+    padding: 30px 50px;
+    /* width: 20px; */
+  }
+
+  .team-img img{
+    width: 80%;
+  }
+
+  .team-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .team-btn button {
+    padding: 10px 30px;
+    color: black;
+
+    background: linear-gradient(to right, grey, rgb(255, 253, 253));
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bolder; */
+}
+
+.team-btn button:hover {
+    color: white;
+    background: linear-gradient(to right, black, grey);
+
+}
+
+/* ========================== Sponsors ======================== */
+.sponsors{
+    padding-top: 100px;
+    background-color: black;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+.sponsors-logo{
+    display: flex;
+    flex-direction: row;
+}
+.sponsors-logo img{
+    height: 100px;
+    padding: 10px 10px;
+    margin: 30px 50px;
+
+}
+
+  

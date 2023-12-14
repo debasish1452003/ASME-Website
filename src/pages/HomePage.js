@@ -36,9 +36,9 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* ============================Latest update section======================  */}
+      {/* ============================Announcement section======================  */}
       <div className="notify">
-        <h1>LATEST UPDATES</h1>
+        <h1>ANNOUNCEMENT</h1>
         <Swiper
           autoplay={{
             delay: 2500,
@@ -214,6 +214,164 @@ const HomePage = () => {
               />
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* =============================== Achievements ======================= */}
+      <div className="acheivements-container">
+        <h1>ACHEIVEMENTS</h1>
+
+        <Swiper
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          grabCursor={true}
+          slidesPerView={"3"}
+          pagination={{
+            clickable: true,
+          }}
+          loop={true}
+          navigation={true}
+          modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
+          className="mySwipers"
+        >
+          <SwiperSlide>
+            <img
+              src="https://swiperjs.com/demos/images/nature-1.jpg"
+              alt="acheivements"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://swiperjs.com/demos/images/nature-2.jpg"
+              alt="acheivements"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://swiperjs.com/demos/images/nature-3.jpg"
+              alt="acheivements"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://swiperjs.com/demos/images/nature-4.jpg"
+              alt="acheivements"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://swiperjs.com/demos/images/nature-5.jpg"
+              alt="acheivements"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://swiperjs.com/demos/images/nature-6.jpg"
+              alt="acheivements"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://swiperjs.com/demos/images/nature-7.jpg"
+              alt="acheivements"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://swiperjs.com/demos/images/nature-8.jpg"
+              alt="acheivements"
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
+      {/* ================================ Gallery ========================== */}
+      <div className="gallery-container">
+        <h1>GALLERY</h1>
+        <div className="grid-container">
+          <div class="grid-item full-width">
+            <img
+              src="https://i.postimg.cc/T3QDjSqq/eric-park-Qb-X8-A8e-Hfzw-unsplash.jpg"
+              alt="gallery-img"
+            />
+          </div>
+
+          <div class="grid-item large-width">
+            {" "}
+            <img
+              src="https://i.postimg.cc/h403m4QX/rafay-ansari-Sd9p5p38nu-I-unsplash.jpg"
+              alt="gallery-img"
+            />
+          </div>
+          <div class="grid-item small-width">
+            {/* <img
+              src="https://i.postimg.cc/X7tCsFTX/karolina-bobek-c-Zy-4x-Mxrh4-unsplash.jpg"
+              alt="gallery-img"
+            /> */}
+            <h3>See More</h3>
+          </div>
+          <div class="grid-item equal-width">
+            <img
+              src="https://i.postimg.cc/hPXm8MZH/karolina-bobek-y-We-Lk-Oq-Xmcg-unsplash.jpg"
+              alt="gallery-img"
+            />
+          </div>
+          <div class="grid-item equal-width">
+            <img
+              src="https://i.postimg.cc/1XjqhNXC/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg"
+              alt="gallery-img"
+            />
+          </div>
+          {/* <div class="grid-item equal-width"></div> */}
+        </div>
+      </div>
+      {/* ======================== Our Team =========================== */}
+
+      <div className="team-container">
+        <div className="team-box">
+          <div className="team-img">
+            <img
+              src="https://i.postimg.cc/kgKMv6xN/pexels-fauxels-3184396.jpg"
+              alt="team-img"
+            />
+          </div>
+
+          <div className="team-content">
+            <h1>OUR TEAM</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex
+              quas nulla quaerat, deserunt placeat illo odio consequuntur
+              perferendis eum! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Fugit laboriosam quasi tempore hic aliquid
+              tenetur quam culpa alias asperiores quidem. Dolor enim rem natus
+              eaque repellendus nisi repellat, provident consequatur.
+            </p>
+            <div className="team-btn">
+              <button>Know Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="sponsors">
+        <h4>OUR SPONSORS</h4>
+        <div className="sponsors-logo">
+          <img src="https://i.postimg.cc/Qxc0Kzhd/pngwing-com.png" alt="logo" />
+          <img
+            src="https://i.postimg.cc/bY7mJPX5/pngwing-com-1.png"
+            alt="logo"
+          />
+          <img
+            src="https://i.postimg.cc/QN96htz5/pngwing-com-3.png
+          "
+            alt="logo"
+          />
+          <img
+            src="https://i.postimg.cc/g2d4VK2q/pngwing-com-2.png"
+            alt="logo"
+          />
         </div>
       </div>
     </Layout>
