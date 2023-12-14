@@ -75,7 +75,7 @@ font-family: 'Roboto', sans-serif; */
      text-transform: uppercase;
      /* box-shadow: 0 8px 6px -6px whitesmoke; */
      --webkit-box-shadow: 0 8px 6px -6px background-color !important;
-     /* border-bottom: 1px solid #F8F8FF !important; */
+     /* border-bottom: 0px solid #F8F8FF !important; */
       
    }
   

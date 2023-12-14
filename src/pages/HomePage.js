@@ -134,6 +134,9 @@ const HomePage = () => {
                 eligendi omnis ex saepe nobis optio sequi facere repellat
                 sapiente illo! Consequatur libero officia obcaecati?
               </p>
+              <div className="project-btn">
+                <button>Know More</button>
+              </div>
             </div>
           </div>
           <div className="project-content" id="project2">
@@ -145,6 +148,9 @@ const HomePage = () => {
                 eligendi omnis ex saepe nobis optio sequi facere repellat
                 sapiente illo! Consequatur libero officia obcaecati?
               </p>
+              <div className="project-btn">
+                <button>Know More</button>
+              </div>
             </div>
             <div className="project-img">
               <img
@@ -154,8 +160,60 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="project-btn">
-          <button>Know More</button>
+      </div>
+
+      {/* ==============================Events Section ======================= */}
+      <div className="events-container">
+        <h1>EVENTS</h1>
+        <div className="events-box">
+          <div className="events-content">
+            <div className="events-desc">
+              <h3>ASME EFX</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                facilis pariatur voluptatem laborum nisi repudiandae natus
+                omnis, ipsum nostrum deserunt veritatis vel sunt voluptate
+                quibusdam expedita? Repellat enim quasi inventore, recusandae
+                facilis debitis quia?
+              </p>
+              <div className="events-btn">
+                <button>
+                  Know More
+                  <ion-icon name="arrow-forward-outline" />
+                </button>
+              </div>
+            </div>
+            <div className="events-img">
+              <img
+                src="https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg"
+                alt="events-img"
+              />
+            </div>
+          </div>
+          <div className="events-content" id="events-content2">
+            <div className="events-desc">
+              <h3>ASME EFX</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                facilis pariatur voluptatem laborum nisi repudiandae natus
+                omnis, ipsum nostrum deserunt veritatis vel sunt voluptate
+                quibusdam expedita? Repellat enim quasi inventore, recusandae
+                facilis debitis quia?
+              </p>
+              <div className="events-btn">
+                <button>
+                  Know More
+                  <ion-icon name="arrow-forward-outline" />
+                </button>
+              </div>
+            </div>
+            <div className="events-img">
+              <img
+                src="https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg"
+                alt="events-img"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
