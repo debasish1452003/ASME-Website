@@ -2,7 +2,7 @@
   "name": "web-ui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://debasish1452003.github.io/",
+  "homepage": "https://debasish1452003.github.io/ASME-Website",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +11,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-elastic-carousel": "^0.11.5",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",

@@ -26,7 +26,8 @@ import {
 
 const HomePage = () => {
   return (
-    <Layout>
+    // ========================Hero Section=============================
+    <Layout title={"ASME-NITRKL Homepage"}>
       <div className="page">
         <Design />
         <div className="content">
@@ -34,6 +35,8 @@ const HomePage = () => {
           <p className="change-text"></p>
         </div>
       </div>
+
+      {/* ============================Latest update section======================  */}
       <div className="notify">
         <h1>LATEST UPDATES</h1>
         <Swiper
@@ -110,6 +113,50 @@ const HomePage = () => {
             />
           </SwiperSlide>
         </Swiper>
+      </div>
+
+      {/* ============================Project Section====================== */}
+      <div className="project-container">
+        <h1>PROJECTS</h1>
+        <div className="project-div">
+          <div className="project-content">
+            <div className="project-img">
+              <img
+                src="https://i.postimg.cc/Gm7LBQyT/pexels-lukas-669615.jpg"
+                alt="project-img"
+              />
+            </div>
+            <div className="project-desc">
+              <h3>ASME EFx</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Libero, asperiores! Nihil aliquam veniam nesciunt similique,
+                eligendi omnis ex saepe nobis optio sequi facere repellat
+                sapiente illo! Consequatur libero officia obcaecati?
+              </p>
+            </div>
+          </div>
+          <div className="project-content" id="project2">
+            <div className="project-desc">
+              <h3>ASME EFx</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Libero, asperiores! Nihil aliquam veniam nesciunt similique,
+                eligendi omnis ex saepe nobis optio sequi facere repellat
+                sapiente illo! Consequatur libero officia obcaecati?
+              </p>
+            </div>
+            <div className="project-img">
+              <img
+                src="https://i.postimg.cc/Gm7LBQyT/pexels-lukas-669615.jpg"
+                alt="project-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="project-btn">
+          <button>Know More</button>
+        </div>
       </div>
     </Layout>
   );
