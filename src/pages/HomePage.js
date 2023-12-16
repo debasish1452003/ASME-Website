@@ -47,7 +47,7 @@ const HomePage = () => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={"3"}
+          slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -55,9 +55,9 @@ const HomePage = () => {
             modifier: 1,
             slideShadows: true,
           }}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           loop={true}
           navigation={true}
           modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
@@ -116,6 +116,7 @@ const HomePage = () => {
       </div>
 
       {/* ============================Project Section====================== */}
+
       <div className="project-container">
         <h1>PROJECTS</h1>
         <div className="project-div">
@@ -172,9 +173,7 @@ const HomePage = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
                 facilis pariatur voluptatem laborum nisi repudiandae natus
-                omnis, ipsum nostrum deserunt veritatis vel sunt voluptate
-                quibusdam expedita? Repellat enim quasi inventore, recusandae
-                facilis debitis quia?
+                omnis, ipsum nostrum
               </p>
               <div className="events-btn">
                 <button>
@@ -196,9 +195,7 @@ const HomePage = () => {
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
                 facilis pariatur voluptatem laborum nisi repudiandae natus
-                omnis, ipsum nostrum deserunt veritatis vel sunt voluptate
-                quibusdam expedita? Repellat enim quasi inventore, recusandae
-                facilis debitis quia?
+                omnis, ipsum nostrum
               </p>
               <div className="events-btn">
                 <button>
@@ -227,10 +224,11 @@ const HomePage = () => {
             disableOnInteraction: false,
           }}
           grabCursor={true}
-          slidesPerView={"3"}
+          slidesPerView={"auto"}
           pagination={{
             clickable: true,
           }}
+          centeredSlides={true}
           loop={true}
           navigation={true}
           modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
@@ -324,7 +322,6 @@ const HomePage = () => {
               alt="gallery-img"
             />
           </div>
-          {/* <div class="grid-item equal-width"></div> */}
         </div>
       </div>
       {/* ======================== Our Team =========================== */}
@@ -343,10 +340,7 @@ const HomePage = () => {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex
               quas nulla quaerat, deserunt placeat illo odio consequuntur
-              perferendis eum! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Fugit laboriosam quasi tempore hic aliquid
-              tenetur quam culpa alias asperiores quidem. Dolor enim rem natus
-              eaque repellendus nisi repellat, provident consequatur.
+              perferendis eum!
             </p>
             <div className="team-btn">
               <button>Know Us</button>
