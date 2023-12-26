@@ -1,0 +1,138 @@
+.team-btn{
+    margin: 20px 50px;
+    padding: 10px 10px;
+}
+
+.team-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.team-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-wrapper2{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.team-sidebar{
+    padding: 0.5em 1em;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+    /* align-items: center; */
+}
+.team-sidebar-btn{
+    padding: 0.5em 1em;
+    margin: 1em 0em;
+    border: white;
+}
+
+.team-main{
+    margin-top: 77px;
+    /* background-color: black; */
+    background-color: #f5f5f5;
+    
+    color: black;
+    height: fit-content;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-main h1{
+    margin-top: 1em;
+    color: red;
+}
+ 
+.team-row{
+    
+    margin: 0px 2em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+.team-col{
+    width: 100%;
+    /* border: 2px solid blue; */
+    padding: 0.5em 0;
+}
+
+.team-card{
+    box-shadow: 0 0 2.2em rgba(25,0,58,0.15);
+    /* border: 2px solid black; */
+    padding: 1.5em 1em;
+    border-radius: 0.6em;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team-card .teamContent-img{
+    width: 8em;
+    height: 8em;
+    background-color: #a993ff;
+    padding: 0.25em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.teamContent-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-card h3{
+    font-weight: 500;
+}
+
+.team-card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.team-card li{
+    list-style: none;
+}
+
+.team-icon{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+
+}
+
+.team-card:hover{
+    background: linear-gradient(#6045ea, #8567f7);
+    color: white;
+}
+
+.team-card:hover .teamContent-img{
+    transform: scale(1.15);
+}
+ 
+ 
