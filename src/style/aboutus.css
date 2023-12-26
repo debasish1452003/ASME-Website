@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Roboto:wght@900&display=swap');
+
+.bg {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.aboutUsContent {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10vw;
+    padding-top: 10vw;
+    width: 50%;
+    position: absolute;
+    color: white;
+}
+.aboutUsContent h1 {
+    font-size: 5vw;
+    padding-bottom: 10%;
+    font-weight: 500;
+}
+.aboutUsContent p {
+    font-family: 'Playfair', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+.bg .right_content{
+    font-family: 'Playfair', sans-serif;
+    font-size: 1.5vw;
+    display: flex;
+    padding: 10vw;
+    padding-top: 25vw;
+    padding-left: 60vw;
+    width: 50vw;
+}
+.bg .right_content .h4_left{
+    width: 12vw;
+    position: absolute;
+    color: white;
+}
+.bg .right_content .h4_right{
+    padding-left: 20vw;
+    width: 30vw;
+    position: absolute;
+    color: white;
+}
