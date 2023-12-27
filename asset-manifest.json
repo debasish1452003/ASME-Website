@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ASME-Website/static/css/main.061246ab.css",
-    "main.js": "/ASME-Website/static/js/main.9f98b9fa.js",
+    "main.css": "/ASME-Website/static/css/main.06d2f28a.css",
+    "main.js": "/ASME-Website/static/js/main.d2282ebc.js",
     "static/js/787.4c617d16.chunk.js": "/ASME-Website/static/js/787.4c617d16.chunk.js",
     "index.html": "/ASME-Website/index.html",
-    "main.061246ab.css.map": "/ASME-Website/static/css/main.061246ab.css.map",
-    "main.9f98b9fa.js.map": "/ASME-Website/static/js/main.9f98b9fa.js.map",
+    "main.06d2f28a.css.map": "/ASME-Website/static/css/main.06d2f28a.css.map",
+    "main.d2282ebc.js.map": "/ASME-Website/static/js/main.d2282ebc.js.map",
     "787.4c617d16.chunk.js.map": "/ASME-Website/static/js/787.4c617d16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.061246ab.css",
-    "static/js/main.9f98b9fa.js"
+    "static/css/main.06d2f28a.css",
+    "static/js/main.d2282ebc.js"
   ]
 }
