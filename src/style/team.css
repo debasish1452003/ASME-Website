@@ -100,7 +100,7 @@
 }
 
 .team-card{
-    box-shadow: 0 0 2.2em rgb(175, 172, 177);
+    box-shadow: 0 0 1.2em rgb(175, 172, 177);
     /* border: 2px solid black; */
     padding: 1.5em 1em;
     border-radius: 0.6em;
@@ -161,6 +161,7 @@
 .team-card:hover{
     background: linear-gradient(#6045ea, #8567f7);
     color: white;
+    box-shadow: 0 0 2.2em rgb(175, 172, 177);
 }
 
 .team-card:hover .teamContent-img{

@@ -10,116 +10,137 @@ font-family: 'Roboto', sans-serif; */
 
 /* ==========================Footer========================= */
 
-.footerdivs{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-inline: 1%;
-    font-size: 14px;
-     
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgb(36, 36, 36); */
+  background: linear-gradient(to bottom,rgb(24, 24, 24), rgb(56, 51, 51));
+ 
+  /* background-color: white; */
+  color: white;
+}
+
+.footerdivs {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-size: 14px;
+  border-bottom: 2px solid blue;
+  padding-top: 30px;
+}
+
+.footerdiv1{
+  display: flex;
+  flex-direction: row;
+}
+
+.footerimg img{
+  height: 20px;
+}
+
+.footer-content-img{
+  display: flex;
+  box-shadow: 2px 2px 4px rgb(255, 252, 252);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+  width: 80%;
+
+}
+.footer-content-img img{
+  margin: 0px 20px;
+  filter: invert(90%) brightness(100%) contrast(100%); /* Invert colors */
+    background-color: white; /* Set a white background */
+    display: inline-block;
     
-   }
-
-   .footer{
-    /* width: 100vw; */
-   }
-
-
-   /* .dummy{
-    position: absolute;
-    z-index: 2;
-    width: 100vw;
-   } */
-  
-   .footerdiv1{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* padding-right: 1%;
-    padding-top: 3%;  */
-   }
-  
-   .footerdiv2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* padding-left: 1%;
-    padding-top: 3%; */
-   }
-  
    
-    .footerdiv2 p{
-     font-size: smaller;
-    }
-  
-    .footerimg{
-     margin-bottom: 5%;
-    }
-  
-   .footerdiv1 img{
-    height: 20px;
-    margin-right: 12px;
-   }
-  
-   .copyright p{
-     margin-bottom: 0;
-     padding-bottom: 1%;
-   }
-  
-  
-   /* ==========================Header(Navbar)================== */
-   .navbar{
-     
-     font-family:  'Poppins', sans-serif ;
-     font-size: 17px;
-     background: black !important;
-     /* background: linear-gradient(to right, black, #777) !important; */
-     line-height: 26px;
-     text-transform: uppercase;
-     box-shadow: 0 8px 6px -6px black;
-     --webkit-box-shadow: 0 8px 6px -6px background-color !important;
-     /* border-bottom: 0px solid #F8F8FF !important; */
-      
-   }
-  
-   .container-fluid{
-     position: relative;
-     height: 60px; 
-   }
-  
-   .overlay-div{
-     position: absolute;
-     top: 5px;  
-     left: 15px;  
-     background-color: white;  
-     /* padding: 10px;   */
-     /* border: 1px solid #ccc;   */
-     height: 100%;
-     /* width: 100px ; */
-   }
-  
-    .overlay-div img{
-     height: 100%;
-     width: 100%;
-    }
-  
-   .nav-link{
-     font-weight: 300 !important;
-     color: white;
-   }
-   .nav-link:hover{
-     color: white;
-   }
-  
-   .active{
-     border-bottom: 2px solid white;
-     color: white !important;
-  
-   }
+}
+.footerdiv2{
+  display: flex;
+  flex-direction: column;
+}
 
-   
+
+.copyright p {
+  margin-bottom: 0;
+  /* padding-bottom: 1%; */
+  color: rgb(125, 123, 123);
+}
+
+.copyright {
+  padding: 3% 0%;
+  border-top: 2px solid red;
+}
+
+@media(max-width: 600px){
+  .footerdivs{
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 500px){
+  .footerdiv1{
+    flex-direction: column;
+  }
+}
+
+
+/* ==========================Header(Navbar)================== */
+.navbar {
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  background: black !important;
+  /* background: linear-gradient(to right, black, #777) !important; */
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px black;
+  --webkit-box-shadow: 0 8px 6px -6px background-color !important;
+  /* border-bottom: 0px solid #F8F8FF !important; */
+
+}
+
+.container-fluid {
+  position: relative;
+  height: 60px;
+}
+
+.overlay-div {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  background-color: white;
+  /* padding: 10px;   */
+  /* border: 1px solid #ccc;   */
+  height: 100%;
+  /* width: 100px ; */
+}
+
+.overlay-div img {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.active {
+  border-bottom: 2px solid white;
+  color: white !important;
+
+}
+
+
 /* ==============================Page not found====================== */
 .pnf {
   display: flex;
@@ -157,4 +178,3 @@ font-family: 'Roboto', sans-serif; */
   height: 80vh;
 }
    */
-  

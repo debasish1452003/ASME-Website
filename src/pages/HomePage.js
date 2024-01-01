@@ -25,6 +25,67 @@ import {
 } from "swiper/modules";
 
 const HomePage = () => {
+  const eventdata = [
+    {
+      id: "event1",
+      title: "ASME Efx",
+      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+    },
+    {
+      id: "event2",
+      title: "ASME Efx",
+      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+    },
+    {
+      id: "event3",
+      title: "ASME Efx",
+      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+    },
+    {
+      id: "event4",
+      title: "ASME Efx",
+      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+    },
+  ];
+
+  const projectdata = [
+    {
+      id: "event1",
+      title: "ASME Efx",
+      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+    },
+    {
+      id: "event2",
+      title: "ASME Efx",
+      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+    },
+    {
+      id: "event3",
+      title: "ASME Efx",
+      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+    },
+    {
+      id: "event4",
+      title: "ASME Efx",
+      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+    },
+  ];
   return (
     // ========================Hero Section=============================
     <Layout title={"ASME-NITRKL Homepage"}>
@@ -117,7 +178,7 @@ const HomePage = () => {
 
       {/* ============================Project Section====================== */}
 
-      <div className="project-container">
+      {/* <div className="project-container">
         <h1>PROJECTS</h1>
         <div className="project-div">
           <div className="project-content">
@@ -161,10 +222,69 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="project-container">
+        <h1>PROJECTS</h1>
+
+        <div
+          className="event-container secondary d-flex flex-wrap"
+          style={{
+            width: "100vw",
+            margin: "0 auto",
+            padding: "0 auto",
+            alignContent: "center",
+            justifyContent: "center",
+          }}
+        >
+          {projectdata.map(({ title, id, description, img }) => {
+            return (
+              <div
+                className="project-card"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  // justifyContent: "center",
+                  flexDirection: "column",
+                  width: "350px",
+                  height: "100%",
+                  margin: "2em 2.5em",
+                }}
+              >
+                <div
+                  className="project-img"
+                  style={{
+                    width: "100%",
+                    height: "80%",
+                  }}
+                >
+                  <img
+                    src={img}
+                    alt="project-img"
+                    style={{
+                      objectFit: "contain",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  />
+                </div>
+                <div className="project-decs">
+                  <h2 className="text-center">{title}</h2>
+                  <div className="project-para">
+                    <p>{description.substring(0, 100)}...</p>
+                  </div>
+                  <div className="project-btn">
+                    <button className="btn">Know More</button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       {/* ==============================Events Section ======================= */}
-      <div className="events-container">
+      {/* <div className="events-container">
         <h1>EVENTS</h1>
         <div className="events-box">
           <div className="events-content">
@@ -211,6 +331,65 @@ const HomePage = () => {
               />
             </div>
           </div>
+        </div>
+      </div> */}
+
+      <div className="events-container">
+        <h1>EVENTS</h1>
+
+        <div
+          className="event-container secondary d-flex flex-wrap"
+          style={{
+            width: "100vw",
+            margin: "0 auto",
+            padding: "0 auto",
+            alignContent: "center",
+            justifyContent: "center",
+          }}
+        >
+          {eventdata.map(({ title, id, description, img }) => {
+            return (
+              <div
+                className="event-card"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  // justifyContent: "center",
+                  flexDirection: "column",
+                  width: "350px",
+                  height: "100%",
+                  margin: "2em 2.5em",
+                }}
+              >
+                <div
+                  className="event-img"
+                  style={{
+                    width: "100%",
+                    height: "80%",
+                  }}
+                >
+                  <img
+                    src={img}
+                    alt="event-img"
+                    style={{
+                      objectFit: "contain",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  />
+                </div>
+                <div className="events-decs">
+                  <h2 className="text-center">{title}</h2>
+                  <div className="events-para">
+                    <p>{description.substring(0, 100)}...</p>
+                  </div>
+                  <div className="events-btn">
+                    <button className="btn">Know More</button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 
@@ -349,6 +528,7 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* ===========================Sponsors============================ */}
       <div className="sponsors">
         <h4>OUR SPONSORS</h4>
         <div className="sponsors-logo">
