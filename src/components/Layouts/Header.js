@@ -1,7 +1,12 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+
+  const isHomeActive =
+    location.pathname === "/" || location.pathname === "/ASME-Website";
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -29,7 +34,10 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <NavLink to="/" className="nav-link active">
+                <NavLink
+                  to="/"
+                  className={isHomeActive ? "nav-link active" : "nav-link"}
+                >
                   Home
                 </NavLink>
               </li>
@@ -59,7 +67,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/ourteam" className="nav-link">
+                <NavLink to="/Our-Team" className="nav-link">
                   Our Team
                 </NavLink>
               </li>
