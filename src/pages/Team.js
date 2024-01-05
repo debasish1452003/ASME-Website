@@ -15,7 +15,7 @@ const Team = () => {
             {
               name: "Samidha",
               role: "Chairperson",
-              // img: "https://i.postimg.cc/gJRFDgwv/SAMIDHA.jpg",
+
               img: "https://i.postimg.cc/tTxd4MJn/SAMIDHA.jpg",
             },
             {
@@ -27,9 +27,8 @@ const Team = () => {
             {
               name: "Udita Mishra",
               role: "Treasurer",
-              // img: "https://i.postimg.cc/66rx41xK/IMG-20220328-WA0083.jpg",
-              // img: "https://i.postimg.cc/VsXByp23/IMG-20220328-WA0083.jpg",
-              img: "https://i.postimg.cc/hvdbn6dh/IMG-20220329-WA0108.jpg",
+
+              img: "https://i.postimg.cc/qvfzFRvd/udita.jpg",
             },
           ],
         },
@@ -45,7 +44,7 @@ const Team = () => {
             {
               name: "Hemant Rout",
               role: "Vice- Captain",
-              img: "https://i.postimg.cc/pdmvPJq3/20231129-155035.jpg",
+              img: "https://i.postimg.cc/J7vnynJB/hemant.png",
             },
             { name: "Pranay Sharma", role: "Manager", img: "" },
             {
@@ -67,7 +66,11 @@ const Team = () => {
             { name: "DEEPANDRA SINGH", role: "Student Member", img: "" },
             { name: "BIBHUTI PALEI", role: "Student Member", img: "" },
             { name: "SRIJONI GHOSH", role: "Student Member", img: "" },
-            { name: "NIBEDITA TRIPATHY", role: "Student Member", img: "" },
+            {
+              name: "NIBEDITA TRIPATHY",
+              role: "Student Member",
+              img: "https://i.postimg.cc/8s8NZZVg/Nibedita-Tripathy.jpg",
+            },
             {
               name: "OM PRAKASH DALBEHERA",
               role: "Student Member",
@@ -85,7 +88,11 @@ const Team = () => {
               img: "https://i.postimg.cc/Wpg2DSTv/kunal-sharma.jpg",
             },
             { name: "SRI CHINMAYANANDA", role: "Student Member", img: "" },
-            { name: "Pradyumna Mohapatra", role: "Student Member", img: "" },
+            {
+              name: "Pradyumna Mohapatra",
+              role: "Student Member",
+              img: "https://i.postimg.cc/KYQcm7tt/IMG-20231224-191023.jpg",
+            },
             { name: "M Sai Krishna", role: "Student Member", img: "" },
           ],
         },
@@ -98,20 +105,94 @@ const Team = () => {
               role: "Captain",
               img: "https://i.postimg.cc/XYBMhcxJ/PRAYASH-KUMAR-BEHERA.jpg",
             },
-            { name: "Ashish Kumar Sahu", role: "Vice- Captain", img: "" },
+            {
+              name: "Ashish Kumar Sahu",
+              role: "Vice- Captain",
+              img: "https://i.postimg.cc/1Xn3Chxt/ASHISH-KUMAR-SAHU.jpg",
+            },
             { name: "Sidhartha Sekhar Das", role: "Student Member", img: "" },
             {
               name: "Ayush Sahu",
               role: "Student Member",
-              img: "https://i.postimg.cc/L4vMZsnH/IMG20230403130618-1.jpg",
+              img: "https://i.postimg.cc/cLQrGSvt/Ayush-Sahu.jpg",
             },
-            { name: "PRIYANSHU SINGH", role: "Student Member", img: "" },
-            { name: "Shakti prasad patra", role: "Student Member", img: "" },
+            {
+              name: "PRIYANSHU SINGH",
+              role: "Student Member",
+              img: "https://i.postimg.cc/15V8M6PH/PRIYANSHU-SINGH.jpg",
+            },
+            {
+              name: "Shakti prasad patra",
+              role: "Student Member",
+              img: "https://i.postimg.cc/PqTNtRD3/Shakti-Prasad-patra.jpg",
+            },
+          ],
+        },
+        {
+          title: "BluePrint",
+          id: "Team4",
+
+          members: [
+            {
+              name: "Ayan Kumar Rajak",
+              role: "Captain",
+              img: "",
+            },
+            {
+              name: "Ayush Kumar Nayak",
+              role: "Vice-Captain",
+              img: "",
+            },
+            {
+              name: "Sriharsha Mishra",
+              role: "Aerodynamics Subsystem Lead",
+              img: "",
+            },
+            {
+              name: "Biswaranjan Guru",
+              role: "Electronics lead and Manager",
+              img: "",
+            },
+            {
+              name: "Saumyadeep Sau",
+              role: "Student Member",
+              img: "",
+            },
+            {
+              name: "Sidhartha Sekhar Das",
+              role: "Student Member",
+              img: "",
+            },
+            {
+              name: "DEEPANDRA SINGH",
+              role: "Student Member",
+              img: "",
+            },
+            {
+              name: "PRIYANSHU SINGH",
+              role: "Student Member",
+              img: "https://i.postimg.cc/1tZxxkNX/PRIYANSHU-SINGH.jpg",
+            },
+            {
+              name: "Pratyush Kumar Mohapatra",
+              role: "Student Member",
+              img: "",
+            },
+            {
+              name: "Shakti prasad patra",
+              role: "Student Member",
+              img: "https://i.postimg.cc/tR5KfmRR/Shakti-Prasad-patra.jpg",
+            },
+            {
+              name: "Pradyumna Mohapatra",
+              role: "Student Member",
+              img: "https://i.postimg.cc/j2ZB7C3n/IMG-20230829-164130.jpg",
+            },
           ],
         },
         {
           title: "Creative",
-          id: "Team4",
+          id: "Team5",
           members: [
             { name: "Archana Moharana", role: "Creative Head", img: "" },
             { name: "DEEPANDRA SINGH", role: "Student member", img: "" },
@@ -139,87 +220,43 @@ const Team = () => {
         {
           title: "Executive",
           id: "Team1",
+
           members: [
-            { name: "Grace Lee", role: "Manager", img: "" },
-            { name: "Mark Johnson", role: "Developer", img: "" },
-            { name: "Sophie Davis", role: "Designer", img: "" },
-            { name: "Elijah Moore", role: "Analyst", img: "" },
-          ],
-        },
-        {
-          title: "Bluestreak",
-          id: "Team2",
-          members: [
-            { name: "Lily Wilson", role: "Manager", img: "" },
-            { name: "Ethan Garcia", role: "Developer", img: "" },
-            { name: "Aiden Clark", role: "Designer", img: "" },
-            { name: "Olivia Smith", role: "Analyst", img: "" },
-          ],
-        },
-        {
-          title: "Bluebird",
-          id: "Team3",
-          members: [
-            { name: "Lucas Martinez", role: "Manager", img: "" },
-            { name: "Aria White", role: "Developer", img: "" },
-            { name: "Emma Taylor", role: "Designer", img: "" },
-            { name: "Jackson Brown", role: "Analyst", img: "" },
-          ],
-        },
-        {
-          title: "Creative",
-          id: "Team4",
-          members: [
-            { name: "Harper Anderson", role: "Manager", img: "" },
-            { name: "Jack Lopez", role: "Developer", img: "" },
-            { name: "Avery Davis", role: "Designer", img: "" },
-            { name: "Mia Johnson", role: "Analyst", img: "" },
-          ],
-        },
-      ],
-    },
-    {
-      id: "id2021",
-      title: "2021",
-      teams: [
-        {
-          title: "Executive",
-          id: "Team1",
-          members: [
-            { name: "Noah Wilson", role: "Manager", img: "" },
-            { name: "Sophia Garcia", role: "Developer", img: "" },
-            { name: "James Lee", role: "Designer", img: "" },
-            { name: "Ava Davis", role: "Analyst", img: "" },
-          ],
-        },
-        {
-          title: "Bluestreak",
-          id: "Team2",
-          members: [
-            { name: "Elijah Martinez", role: "Manager", img: "" },
-            { name: "Chloe White", role: "Developer", img: "" },
-            { name: "Logan Taylor", role: "Designer", img: "" },
-            { name: "Grace Brown", role: "Analyst", img: "" },
-          ],
-        },
-        {
-          title: "Bluebird",
-          id: "Team3",
-          members: [
-            { name: "Mason Anderson", role: "Manager", img: "" },
-            { name: "Aurora Lopez", role: "Developer", img: "" },
-            { name: "Emily Clark", role: "Designer", img: "" },
-            { name: "Liam Smith", role: "Analyst", img: "" },
-          ],
-        },
-        {
-          title: "Creative",
-          id: "Team4",
-          members: [
-            { name: "Evelyn Johnson", role: "Manager", img: "" },
-            { name: "Owen Davis", role: "Developer", img: "" },
-            { name: "Scarlett Wilson", role: "Designer", img: "" },
-            { name: "Wyatt Garcia", role: "Analyst", img: "" },
+            {
+              name: "Deepak Kumar Mohanty",
+              role: "Ex President",
+              img: "https://i.postimg.cc/j5FM095m/Deepak-Kumar-Mohanty.jpg",
+            },
+            {
+              name: "Anisha Mohapatra",
+              role: "Ex Vice President",
+              img: "",
+            },
+            {
+              name: "Sarthak Sahoo",
+              role: "Ex BS 10.0 Captain",
+              img: "",
+            },
+            {
+              name: "Essa Ameen Baig",
+              role: "Ex Treasurer and Ex BP 1.0 Captain",
+              img: "",
+            },
+            {
+              name: "Rahul Kumar Pandey",
+              role: "Ex BS 10.0 Vice-Captain",
+              img: "",
+            },
+            {
+              name: "Manjit Kumar Sethi",
+              role: "Ex General Secretary",
+              img: "",
+            },
+            {
+              name: "Devansh Saxena",
+              role: "Ex BP 1.0 Vice-Captain",
+              img: "",
+            },
           ],
         },
       ],

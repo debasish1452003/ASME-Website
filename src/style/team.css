@@ -18,6 +18,18 @@
     flex-direction: row;
 }
 
+@media(max-width: 600px){
+
+    .team-wrapper{
+        flex-direction: column;
+    }
+
+    .team-info{
+        flex-direction: column;
+    }
+
+}
+
 .team-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +53,15 @@
     margin-left: 1em;
     /* align-items: center; */
 }
+
+@media(max-width: 600px){
+    .team-row{
+        padding: 0em 0em;
+        margin: 0em 0em;
+    }
+
+}
+
 .team-sidebar-btn{
     padding: 0.5em 1em;
     margin: 1em 0em;
@@ -165,7 +186,7 @@
 }
 
 .team-card:hover .teamContent-img{
-    transform: scale(1.15);
+    transform: scale(1.2);
 }
  
  

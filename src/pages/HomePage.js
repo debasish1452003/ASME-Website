@@ -108,7 +108,7 @@ const HomePage = () => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={"auto"}
+          slidesPerView={"3"}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -120,16 +120,10 @@ const HomePage = () => {
           //   clickable: true,
           // }}
           loop={true}
-          navigation={true}
+          // navigation={true}
           modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <img
-              src="https://i.postimg.cc/G2828yhd/Whats-App-Image-2023-12-13-at-10-10-06-PM.jpg"
-              alt="carousel"
-            />
-          </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://i.postimg.cc/j5pjzSLN/Whats-App-Image-2023-12-13-at-10-11-06-PM.jpg"
@@ -230,7 +224,6 @@ const HomePage = () => {
         <div
           className="event-container secondary d-flex flex-wrap"
           style={{
-            width: "100vw",
             margin: "0 auto",
             padding: "0 auto",
             alignContent: "center",
@@ -340,7 +333,6 @@ const HomePage = () => {
         <div
           className="event-container secondary d-flex flex-wrap"
           style={{
-            width: "100vw",
             margin: "0 auto",
             padding: "0 auto",
             alignContent: "center",
@@ -468,17 +460,17 @@ const HomePage = () => {
       <div className="gallery-container">
         <h1>GALLERY</h1>
         <div className="grid-container">
-          <div class="grid-item full-width">
+          <div className="grid-item full-width" style={{ objectFit: "cover" }}>
             <img
-              src="https://i.postimg.cc/T3QDjSqq/eric-park-Qb-X8-A8e-Hfzw-unsplash.jpg"
+              // src="https://i.postimg.cc/T3QDjSqq/eric-park-Qb-X8-A8e-Hfzw-unsplash.jpg"
+              src="https://www.hindustantimes.com/ht-img/img/2023/07/24/1600x900/nit-rourkela_1690183502765_1690183512065.jpeg"
               alt="gallery-img"
             />
           </div>
 
           <div class="grid-item large-width">
-            {" "}
             <img
-              src="https://i.postimg.cc/h403m4QX/rafay-ansari-Sd9p5p38nu-I-unsplash.jpg"
+              src="https://i.postimg.cc/zDkQMggR/Whats-App-Image-2023-07-18-at-12-10-53-PM.jpg"
               alt="gallery-img"
             />
           </div>
@@ -491,13 +483,14 @@ const HomePage = () => {
           </div>
           <div class="grid-item equal-width">
             <img
-              src="https://i.postimg.cc/hPXm8MZH/karolina-bobek-y-We-Lk-Oq-Xmcg-unsplash.jpg"
+              src="https://i.postimg.cc/D05Yb9Tc/Whats-App-Image-2023-07-18-at-12-11-08-PM.jpg"
               alt="gallery-img"
             />
           </div>
           <div class="grid-item equal-width">
             <img
-              src="https://i.postimg.cc/1XjqhNXC/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg"
+              src="https://i.postimg.cc/tJ9MJXLT/Whats-App-Image-2023-07-18-at-12-11-13-PM.jpg
+              "
               alt="gallery-img"
             />
           </div>
@@ -521,7 +514,7 @@ const HomePage = () => {
               quas nulla quaerat, deserunt placeat illo odio consequuntur
               perferendis eum!
             </p>
-            <div className="team-btn">
+            <div className="teams-btn">
               <button>Know Us</button>
             </div>
           </div>

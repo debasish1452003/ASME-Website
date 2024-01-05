@@ -213,7 +213,7 @@ font-family: 'Roboto', sans-serif; */
     flex-direction: column;
     color: white;
     /* color: black; */
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     /* height: 1; */
 
     align-items: center;
@@ -241,15 +241,23 @@ font-family: 'Roboto', sans-serif; */
 
 .project-btn button:hover {
     background: linear-gradient(to right, grey, rgb(255, 253, 253));
-    color: black;
+    color: rgb(70, 70, 70);
 }
 
 .project-card {
     /* border: 4px solid red; */
 
     /* border-radius: 15px; */
-    box-shadow: 0 0px 20px 2px #e3e1db;
+    box-shadow: 0 0px 5px 1px #e3e1db;
     overflow: hidden;
+    background-color: rgb(27, 27, 27);
+}
+
+.project-card:hover{
+    box-shadow: 0 0px 20px 2px #e3e1db;
+    transform: scale(1.03);
+    /* transform: scale(0.8); */
+
 }
  
 
@@ -296,8 +304,13 @@ font-family: 'Roboto', sans-serif; */
     /* border: 4px solid red; */
 
     /* border-radius: 15px; */
-    box-shadow: 0 0px 20px 5px #B8860B;
+    box-shadow: 0 0px 5px 1px #ffc32b;
     overflow: hidden;
+}
+
+.event-card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0px 20px 5px #ad7f09;
 }
 
 .events-decs {
@@ -527,7 +540,7 @@ font-family: 'Roboto', sans-serif; */
     padding: 20px 0px;
 }
 
-.team-btn button {
+.teams-btn button {
     padding: 10px 30px;
     color: black;
 
@@ -536,7 +549,7 @@ font-family: 'Roboto', sans-serif; */
     /* font-weight: bolder; */
 }
 
-.team-btn button:hover {
+.teams-btn button:hover {
     color: white;
     background: linear-gradient(to right, black, grey);
 
