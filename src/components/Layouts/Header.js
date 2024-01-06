@@ -14,14 +14,13 @@ const Header = () => {
           <Link to="#" className="navbar-brand">
             <div className="overlay-div">
               <img
-                // src="https://i.postimg.cc/0NGVVycW/ASME-log.png"
                 src="https://i.postimg.cc/RVCw6ktN/Whats-App-Image-2023-12-12-at-4-12-10-PM.jpg"
                 alt="asme-logo"
               />
             </div>
           </Link>
           <button
-            className="navbar-toggler "
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"

@@ -8,7 +8,7 @@ font-family: 'Poppins', sans-serif; */
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-/* ==========================Footer========================= */
+/*==========================Footer=========================*/
 
 .footer {
   display: flex;
@@ -138,9 +138,8 @@ background-clip: text;
 }
 
 
-/* ==========================Header(Navbar)================== */
+/* ========================== Header(Navbar) ================== */
 .navbar {
-
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   background: black !important;
@@ -150,13 +149,14 @@ background-clip: text;
   box-shadow: 0 8px 6px -6px black;
   --webkit-box-shadow: 0 8px 6px -6px background-color !important;
   /* border-bottom: 0px solid #F8F8FF !important; */
-
 }
 
 .container-fluid {
   position: relative;
   height: 60px;
 }
+
+ 
 
 .overlay-div {
   position: absolute;
