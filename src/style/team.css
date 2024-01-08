@@ -37,22 +37,7 @@
     justify-content: center;
 }
 
-.team-wrapper2{
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    /* height: 100vh; */
-}
-
-.team-sidebar{
-    padding: 0.5em 1em;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1em;
-    /* align-items: center; */
-}
+ 
 
 @media(max-width: 600px){
     .team-row{
@@ -62,15 +47,7 @@
 
 }
 
-.team-sidebar-btn{
-    padding: 0.5em 1em;
-    margin: 1em 0em;
-    /* border: white; */
-}
-.team-sidebar-btn:hover{
-    background:linear-gradient(to right, black, rgb(52, 52, 52));
-    color: white;
-}
+ 
 
 .clicked{
    

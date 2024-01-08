@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layouts/Layout";
 import Design from "../components/Layouts/Design";
 
@@ -86,6 +86,7 @@ const HomePage = () => {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
     },
   ];
+
   return (
     // ========================Hero Section=============================
     <Layout title={"ASME-NITRKL Homepage"}>

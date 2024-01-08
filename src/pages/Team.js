@@ -268,10 +268,12 @@ const Team = () => {
 
   const [clicked, setClicked] = useState(true);
   const [mainclicked, mainsetClicked] = useState(true);
+  const [titles, setTitles] = useState("2023");
 
-  const handleClick = (id) => {
+  const handleClick = (id, title) => {
     setClicked(!clicked);
     setToggled(id);
+    setTitles(title);
   };
 
   const mainhandleClick = (id) => {
@@ -283,24 +285,42 @@ const Team = () => {
     <Layout>
       <div className="team-main">
         <h1>OUR MEMBERS</h1>
-        <div className="team-info">
-          <div className="team-sidebar">
-            {data.map(({ title, id }) => {
-              return (
-                <div className="team-wrapper2">
-                  <button
-                    key={id}
-                    className={`team-sidebar-btn ${
-                      toggled === id ? "clicked" : ""
-                    }`}
-                    onClick={() => handleClick(id)}
-                  >
-                    {title}
-                  </button>
-                </div>
-              );
-            })}
+        <div className="team-sidebar">
+          <div className="team-wrapper2">
+            <div class="dropdown">
+              <>
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  // key={toggled}
+                >
+                  {titles}
+                </button>
+              </>
+
+              <ul class="dropdown-menu">
+                {data.map(({ title, id }) => {
+                  return (
+                    <>
+                      <li
+                        key={id}
+                        className={`team-sidebar-btns ${
+                          toggled === id ? "clicked" : ""
+                        }`}
+                        onClick={() => handleClick(id, title)}
+                      >
+                        {title}
+                      </li>
+                    </>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
+        </div>
+        <div className="team-info">
           <div className="team-info-content">
             <div className="team-wrapper">
               {data.map(({ id, teams }) => {

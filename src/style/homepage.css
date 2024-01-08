@@ -20,6 +20,8 @@ font-family: 'Roboto', sans-serif; */
     content: "";
     background-image: url('https://i.postimg.cc/wvMVf9DR/Untitled.jpg');
 
+
+
     background-size: cover;
     background-position: center;
 
@@ -221,13 +223,13 @@ font-family: 'Roboto', sans-serif; */
     padding-top: 100px;
 }
 
-.project-decs{
+.project-decs {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
 }
- 
+
 
 .project-btn button {
     padding: 10px 30px;
@@ -253,13 +255,13 @@ font-family: 'Roboto', sans-serif; */
     background-color: rgb(27, 27, 27);
 }
 
-.project-card:hover{
+.project-card:hover {
     box-shadow: 0 0px 20px 2px #e3e1db;
     transform: scale(1.03);
     /* transform: scale(0.8); */
 
 }
- 
+
 
 /* ================================Events========================= */
 
@@ -308,7 +310,7 @@ font-family: 'Roboto', sans-serif; */
     overflow: hidden;
 }
 
-.event-card:hover{
+.event-card:hover {
     transform: scale(1.03);
     box-shadow: 0 0px 20px 5px #ad7f09;
 }
