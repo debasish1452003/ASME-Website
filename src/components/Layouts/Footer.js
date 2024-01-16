@@ -3,11 +3,23 @@ import React from "react";
 const Footer = () => {
   return (
     // <div className="dummy">
+
     <div className="footer">
+      <div className="footer-content-img">
+        <img
+          src="https://i.postimg.cc/4NWhpNfL/ASME-NITR-Black-Logo-1.png"
+          alt="ASME Logo"
+        />
+        <img
+          src="https://i.postimg.cc/ncFDsQJ9/NITR-LOGO-with-SAC-Black-1.png
+"
+          alt="SAC Logo"
+        />
+      </div>
       <div className="footerdivs pt-6 col-lg-12 ">
         <div className="footerdiv1 col-lg-8 mt-5">
           <div className="footerdiv1-content1 col-lg-6">
-            <div className="footer-content-img">
+            {/* <div className="footer-content-img">
               <img
                 src="https://i.postimg.cc/4NWhpNfL/ASME-NITR-Black-Logo-1.png"
                 alt="ASME Logo"
@@ -17,9 +29,9 @@ const Footer = () => {
 "
                 alt="SAC Logo"
               />
-            </div>
-            <div className="footer-content mt-5 text-center">
-              <h6>ASME NITR Chapter</h6>
+            </div> */}
+            <div className="footer-content mt-1 text-center">
+              <h4>ASME NITR Chapter</h4>
               <p>Club Under Tehcnical Societyk, SAC NIT Rourkela</p>
 
               <p>ME-112, Old Mechanical Building, NIT Rourkela</p>
