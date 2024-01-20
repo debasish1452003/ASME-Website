@@ -1,92 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Roboto:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Roboto:wght@900&display=swap");
 
 .bgHeading {
-position: relative;
+  position: relative;
 }
 
 .bgImage {
-    filter: blur(4px);
-    width: 100%;
-    height: 70vh;
+  filter: blur(4px) brightness(70%);
+  width: 100%;
+  height: 70vh;
 }
-
-.heading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5vw;
-    font-weight: 500;
-    color: white;
+.bgHeading h1 {
+  font-size: 6rem;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  font-weight: 900;
 }
 .bg {
-    position: relative;
-    background-color: black;
-    height: 80vh;
-    width: 100vw;
-    display: flex;
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
 }
 .aboutUsContent {
-    font-family: 'Montserrat', sans-serif;
-    padding: 7vw 10vw 10vw 10vw;
-    width: 60%;
-    position: absolute;
-    color: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 7vw 10vw 10vw 10vw;
+  width: 60%;
+  position: absolute;
+  color: white;
 }
 .aboutUsContent h1 {
-    font-size: 3vw;
-    padding-bottom: 10%;
-    font-weight: 500;
+  font-size: 3vw;
+  padding-bottom: 10%;
+  font-weight: 500;
 }
 .aboutUsContent p {
-    font-size: 1vw;
-    font-weight: 100;
+  font-size: 1vw;
+  font-weight: 100;
 }
-.bg .right_content{
-    font-size: 1.5vw;
-    display: flex;
-    padding: 10vw;
-    padding-top: 15vw;
-    padding-left: 60vw;
-    width: 50vw;
+.bg .right_content {
+  font-size: 1.5vw;
+  display: flex;
+  padding: 10vw;
+  padding-top: 15vw;
+  padding-left: 60vw;
+  width: 50vw;
 }
-.bg .right_content .h4_left{
-    width: 12vw;
-    position: absolute;
-    color: white;
+.bg .right_content .h4_left {
+  width: 12vw;
+  position: absolute;
+  color: white;
 }
-.bg .right_content .h4_right{
-    padding-left: 20vw;
-    width: 30vw;
-    position: absolute;
-    color: white;
+.bg .right_content .h4_right {
+  padding-left: 20vw;
+  width: 30vw;
+  position: absolute;
+  color: white;
 }
 .lowerContent {
-    background-color: black;
-    height: 60vh;
-    width: 100vw;
-    color: white;
+  background-color: black;
+  height: 60vh;
+  width: 100vw;
+  color: white;
 }
 .lowerContent h1 {
-    padding: 0 0 20px 10vw;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3vw;
-    font-weight: 500;
+  padding: 0 0 20px 10vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3vw;
+  font-weight: 500;
 }
 .messageRow {
-    display: grid;
-    grid-template-columns: 1fr 40vw;
+  display: grid;
+  grid-template-columns: 1fr 40vw;
 }
 .facadContent {
-    padding-left: 10vw;
-    width: 70%;
-    color: white;
-    font-size: 1vw;
-    font-weight: 400;
+  padding-left: 10vw;
+  width: 70%;
+  color: white;
+  font-size: 1vw;
+  font-weight: 400;
 }
 .facadImg img {
-    width: 70%;
+  width: 70%;
 }
 .facadImg h3 {
-    padding-top: 1.5vh;
+  padding-top: 1.5vh;
+}
+
+@media (max-width: 950px) {
+  .bgHeading h1 {
+    font-size: 4rem;
+    left: 30%;
+    top: 50%;
+    transform: translate(-20%, -30%);
+  }
+  .bg {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
