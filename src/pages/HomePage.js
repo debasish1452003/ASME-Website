@@ -28,64 +28,66 @@ const HomePage = () => {
   const eventdata = [
     {
       id: "event1",
-      title: "ASME Efx",
-      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      title: "ASME EFX",
+      img: "https://i.postimg.cc/VLK9LnhG/ASME-News-e-Fx-New-Locations-hero.jpg",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+        "ASME EFx events inject vitality into local communities with intimate, in-person gatherings you host. These thematic events offer a rich platform for students and early-career engineers, featuring technical programming, career development, and social activities. Local competitions, aligned with E-Fest challenges, expose participants to the e-Human Powered Vehicle Challenge, Student Design Competition, Oral Competition, Poster Competition, Elevator Pitch Competition, Environmental Systems Division Competition, and Innovative Additive Manufacturing 3D Competition. Custom local competitions, promoting teamwork and skill enhancement, are encouraged. Interactive workshops cover technical and soft skills, preparing students for post-graduation workforce entry. Networking opportunities connect participants with speakers, peers, faculty, and potential employers, fostering a vibrant engineering celebration.",
     },
     {
       id: "event2",
-      title: "ASME Efx",
-      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+      title: "E-FESTS",
+      img: "https://i.postimg.cc/Ls101xK6/hero-inaguralefdigital.jpg",
+      description: `ASME Engineering Festivals (E-Fests) bring together students and emerging engineers worldwide in a dynamic digital space. Immerse yourself in innovation, enhance your resume, engage with prospective employers, partake in exciting digital competitions, and launch your career. Embrace the ethos of "innovate, create, compete, celebrate" through E-Fests—our premier all-virtual events: E-Fest Careers and E-Fest Digital. Join the global community to celebrate the essence of engineering in a vibrant and transformative digital experience.
+        `,
     },
     {
       id: "event3",
-      title: "ASME Efx",
-      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      title: "MENTORING",
+      img: "https://i.postimg.cc/DwDM0tNM/Mentor-750x320.png",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+        "ASME's career advice and mentoring go beyond conventional guidance, connecting aspiring engineers with seasoned professionals who share firsthand insights into post-graduate work realities. Engage in meaningful conversations, ask questions, and build your resume while gaining valuable perspectives from practicing engineers in today's dynamic workforce.",
     },
     {
       id: "event4",
-      title: "ASME Efx",
-      img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
+      title: "WORKSHOPS",
+      img: "https://i.postimg.cc/kgDHnnTS/Web-Ad-Pages-HR-Hero.png",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+        "ASME's interactive workshops and sessions provide a dynamic learning platform for emerging engineers. Engage in collaborative experiences with hands-on software demos and professional development workshops. These sessions are designed to help you build a robust resume and skill set, offering valuable insights to navigate the early stages of your career successfully. Excel as a new engineer with the practical knowledge gained from these interactive and enriching opportunities.",
     },
   ];
 
   const projectdata = [
     {
       id: "event1",
-      title: "ASME Efx",
+      title: "BLUEPRINT",
       img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+        "Team Blueprint, a team of ASME NIT Rourkela, engages in research, innovation, and design. They utilize CAD software to create diverse models, subsequently manufacturing them through 3D printing technology. The team actively participates in the IAM3D competition as part of ASME Efest, showcasing their skills and expertise in engineering and design within the ASME community.",
     },
     {
       id: "event2",
-      title: "ASME Efx",
+      title: "BLUESTREAK",
       img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+        "Bluestreak, a team within ASME at NIT Rourkela, is a dedicated team focused on research, analysis, and innovation. They specialize in designing human-powered vehicles from scratch, incorporating indigenous elements. Bluestreak actively participates in the eHPV competition at ASME Efest, showcasing their commitment to pushing the boundaries of human-powered vehicle design and contributing to the advancement of sustainable transportation solutions.",
     },
+
     {
       id: "event3",
-      title: "ASME Efx",
+      title: "BLUEBIRD",
       img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+        "Bluebird, a team from ASME NIT Rourkela, specializes in CAD modeling and coding for virtual competitions. Their expertise extends to designing vehicles for diverse challenges, including autonomous vehicle competitions, lunar lander simulations, and ocean cleanup missions. Through innovation and technical prowess, Team Bluebird consistently participates in and excels at a variety of virtual events, showcasing their commitment to engineering excellence and problem-solving in the digital realm.",
     },
     {
       id: "event4",
-      title: "ASME Efx",
+      title: "OLD GUARD",
       img: "https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem excepturi sed natus voluptatem corporis voluptate unde illum?Necessitatibus voluptates eaque magnam illum voluptate recusanda neque, aut id unde voluptas iure r  dicta",
+        "Engineers, like other professionals, need strong communication skills in both speaking and writing. The Oral Competition, supported by the ASME Old Guard Committee, underscores the importance of effective oral presentations. The committee's annual contributions and volunteer efforts drive this program, benefiting engineering students and early career professionals, ultimately enhancing the engineering profession.",
     },
   ];
+
   return (
     // ========================Hero Section=============================
     <Layout title={"ASME-NITRKL Homepage"}>
@@ -237,11 +239,7 @@ const HomePage = () => {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  // justifyContent: "center",
                   flexDirection: "column",
-                  width: "350px",
-                  height: "100%",
-                  margin: "2em 2.5em",
                 }}
               >
                 <div
@@ -255,7 +253,7 @@ const HomePage = () => {
                     src={img}
                     alt="project-img"
                     style={{
-                      objectFit: "contain",
+                      objectFit: "cover",
                       height: "100%",
                       width: "100%",
                     }}
@@ -266,9 +264,9 @@ const HomePage = () => {
                   <div className="project-para">
                     <p>{description.substring(0, 100)}...</p>
                   </div>
-                  <div className="project-btn">
-                    <button className="btn">Know More</button>
-                  </div>
+                </div>
+                <div className="project-btn">
+                  <button className="btn">Know More</button>
                 </div>
               </div>
             );
@@ -277,55 +275,6 @@ const HomePage = () => {
       </div>
 
       {/* ==============================Events Section ======================= */}
-      {/* <div className="events-container">
-        <h1>EVENTS</h1>
-        <div className="events-box">
-          <div className="events-content">
-            <div className="events-desc">
-              <h3>ASME EFX</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                facilis pariatur voluptatem laborum nisi repudiandae natus
-                omnis, ipsum nostrum
-              </p>
-              <div className="events-btn">
-                <button>
-                  Know More
-                  <ion-icon name="arrow-forward-outline" />
-                </button>
-              </div>
-            </div>
-            <div className="events-img">
-              <img
-                src="https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg"
-                alt="events-img"
-              />
-            </div>
-          </div>
-          <div className="events-content" id="events-content2">
-            <div className="events-desc">
-              <h3>ASME EFX</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                facilis pariatur voluptatem laborum nisi repudiandae natus
-                omnis, ipsum nostrum
-              </p>
-              <div className="events-btn">
-                <button>
-                  Know More
-                  <ion-icon name="arrow-forward-outline" />
-                </button>
-              </div>
-            </div>
-            <div className="events-img">
-              <img
-                src="https://i.postimg.cc/d3v666rJ/mate-vanyek-OYn-U6-Vs-P3-M-unsplash.jpg"
-                alt="events-img"
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div className="events-container">
         <h1>EVENTS</h1>
@@ -348,23 +297,21 @@ const HomePage = () => {
                   alignItems: "center",
                   // justifyContent: "center",
                   flexDirection: "column",
-                  width: "350px",
+
                   height: "100%",
-                  margin: "2em 2.5em",
                 }}
               >
                 <div
                   className="event-img"
                   style={{
                     width: "100%",
-                    height: "80%",
                   }}
                 >
                   <img
                     src={img}
                     alt="event-img"
                     style={{
-                      objectFit: "contain",
+                      objectFit: "cover",
                       height: "100%",
                       width: "100%",
                     }}
@@ -375,9 +322,9 @@ const HomePage = () => {
                   <div className="events-para">
                     <p>{description.substring(0, 100)}...</p>
                   </div>
-                  <div className="events-btn">
-                    <button className="btn">Know More</button>
-                  </div>
+                </div>
+                <div className="events-btn">
+                  <button className="btn">Know More</button>
                 </div>
               </div>
             );
@@ -502,7 +449,7 @@ const HomePage = () => {
         <div className="team-box">
           <div className="team-img">
             <img
-              src="https://i.postimg.cc/kgKMv6xN/pexels-fauxels-3184396.jpg"
+              src="https://i.postimg.cc/D05Yb9Tc/Whats-App-Image-2023-07-18-at-12-11-08-PM.jpg"
               alt="team-img"
             />
           </div>

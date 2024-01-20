@@ -20,6 +20,8 @@ font-family: 'Roboto', sans-serif; */
     content: "";
     background-image: url('https://i.postimg.cc/wvMVf9DR/Untitled.jpg');
 
+
+
     background-size: cover;
     background-position: center;
 
@@ -215,51 +217,128 @@ font-family: 'Roboto', sans-serif; */
     /* color: black; */
     background-color: rgb(10, 10, 10);
     /* height: 1; */
-
     align-items: center;
     /* font-family: 'Playfair Display', serif; */
+    
+
+    
     padding-top: 100px;
 }
 
-.project-decs{
+.project-decs {
+    background-color: black;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    width: 90%;
-}
- 
-
-.project-btn button {
-    padding: 10px 30px;
-    background: linear-gradient(to right, black, grey);
-
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-
-    margin: 15px 0px;
-}
-
-.project-btn button:hover {
-    background: linear-gradient(to right, grey, rgb(255, 253, 253));
-    color: rgb(70, 70, 70);
+    justify-content: center;
+    padding: 1em 1em;
+    overflow: hidden;
+    height: 200px;
 }
 
 .project-card {
-    /* border: 4px solid red; */
-
-    /* border-radius: 15px; */
     box-shadow: 0 0px 5px 1px #e3e1db;
     overflow: hidden;
-    background-color: rgb(27, 27, 27);
+    background: rgb(179, 177, 177);
+        
+    width: 25%;
+    margin: 2em 2em;
+    background: rgb(145, 145, 145);
+
 }
 
-.project-card:hover{
+.project-card:hover {
     box-shadow: 0 0px 20px 2px #e3e1db;
     transform: scale(1.03);
     /* transform: scale(0.8); */
+}
+.project-img{
+    height: 16rem;
+}
+
+
+.project-btn button {
+     
+    background: linear-gradient(to right, black, grey);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 0.5em 1em;  
+}
+.project-btn {
+    margin: 10px 0px;
+}
+
+.project-btn button:hover {
+    background: linear-gradient(to left, black, grey);
+    color: white;
+}
+
+
+@media (min-width:750px) and (max-width: 1215px){
+    .project-decs h2{
+        font-size:larger;
+        font-weight: bold;
+    }
+    .project-decs p{
+        font-size:small;
+    }
+    .project-img{
+        height: 10rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 750px){
+    .project-decs p{
+        font-size: xx-small;
+    }
+    .project-decs h2{
+        font-size: small;
+        font-weight: bold;
+    }
+     
+    .project-img{
+        height: 7rem;
+    }
+    .project-decs{
+        height: 100px;
+    }
+    
+    .project-btn{
+        font-size: xx-small;
+    }
+    .project-card{
+        width: 35%;
+        margin: 1em 1em;
+    }
+}
+
+@media (max-width: 500px){
+    .project-img{
+        height: 5rem;
+    }
+    .project-decs p{
+        font-size: 6px;
+    }
+    .project-decs h2{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .project-decs{
+        height: 80px;
+    }
+    .project-btn{
+        font-size: 5px;
+    }
+    .project-btn{
+        margin: 4px 0px
+    }
+    .project-card{
+        width: 40%;
+        margin: 0.8em 0.8em;
+    }
 
 }
- 
+
 
 /* ================================Events========================= */
 
@@ -267,50 +346,29 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* height: 142vh; */
     background-color: black;
     color: white;
     padding: 50px 0px;
-
 }
 
 .events-container h1 {
-    margin: 20px 0px;
-}
-
-
-.events-btn {
-    margin: 20px 0px;
-
-}
-
-.events-btn button {
-    padding: 10px 30px;
-    color: black;
-
-    background: linear-gradient(to right, rgb(184, 134, 11), whitesmoke);
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.events-btn button:hover {
-    /* color: white; */
-    color: black;
-    /* background: linear-gradient(to right, black, grey); */
-    background: linear-gradient(to left, grey, rgb(255, 253, 253));
+    margin: 10px 0px;
 }
 
 .event-card {
-    /* border: 4px solid red; */
-
-    /* border-radius: 15px; */
     box-shadow: 0 0px 5px 1px #ffc32b;
     overflow: hidden;
+    width: 25%;
+    margin: 2em 2em;
+    background: rgb(145, 145, 145);
 }
 
-.event-card:hover{
+.event-card:hover {
     transform: scale(1.03);
     box-shadow: 0 0px 20px 5px #ad7f09;
+}
+.event-img{
+    height: 16rem;
 }
 
 .events-decs {
@@ -320,9 +378,90 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
     justify-content: center;
     padding: 1em 1em;
-
+    overflow: hidden;
+    height: 150px;
 }
 
+.events-btn {
+    margin: 10px 0px;
+}
+
+.events-btn button {
+    padding: 0.5em 1em;
+    color: black;
+    background: linear-gradient(to right, rgb(184, 134, 11), rgb(250, 201, 76) );
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.events-btn button:hover {    
+    color: black;
+    background: linear-gradient(to left, rgb(184, 134, 11), rgb(250, 201, 76) );    
+}
+
+@media (min-width:750px) and (max-width: 1215px){
+    .events-decs h2{
+        font-size:larger;
+        font-weight: bold;
+    }
+    .events-decs p{
+        font-size:small;
+    }
+    .event-img{
+        height: 10rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 750px){
+    .events-decs p{
+        font-size: xx-small;
+    }
+    .events-decs h2{
+        font-size: small;
+        font-weight: bold;
+    }
+     
+    .event-img{
+        height: 7rem;
+    }
+    .events-decs{
+        height: 100px;
+    }
+    
+    .btn{
+        font-size: xx-small;
+    }
+    .event-card{
+        width: 35%;
+        margin: 1em 1em;
+    }
+}
+
+@media (max-width: 500px){
+    .event-img{
+        height: 5rem;
+    }
+    .events-decs p{
+        font-size: 6px;
+    }
+    .events-decs h2{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .events-decs{
+        height: 80px;
+    }
+    .btn{
+        font-size: 5px;
+    }
+    .events-btn{
+        margin: 0px 0px;
+    }
+    .event-card{
+        width: 40%;
+        margin: 0.8em 0.8em;
+    }
+}
+ 
 
 
 /* ============================Achievements Section =========================== */
@@ -333,7 +472,6 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .acheivements-container h1 {
@@ -596,7 +734,7 @@ font-family: 'Roboto', sans-serif; */
 
 /* ========================== Sponsors ======================== */
 .sponsors {
-    padding-top: 100px;
+    padding: 100px;
     background-color: black;
     color: grey;
     display: flex;
