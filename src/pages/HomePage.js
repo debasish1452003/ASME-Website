@@ -1,6 +1,9 @@
 import React from "react";
 import Layout from "../components/Layouts/Layout";
 import Design from "../components/Layouts/Design";
+import ansys from "../assets/Ansys.png";
+import solidworks from "../assets/Solidworks.svg";
+import trail from "../assets/track&trail.png";
 
 // import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -101,7 +104,7 @@ const HomePage = () => {
 
       {/* ============================Announcement section======================  */}
       <div className="notify">
-        <h1>ANNOUNCEMENT</h1>
+        <h1 className="homeHeader">ANNOUNCEMENT</h1>
         <Swiper
           autoplay={{
             delay: 2500,
@@ -174,54 +177,8 @@ const HomePage = () => {
 
       {/* ============================Project Section====================== */}
 
-      {/* <div className="project-container">
-        <h1>PROJECTS</h1>
-        <div className="project-div">
-          <div className="project-content">
-            <div className="project-img">
-              <img
-                src="https://i.postimg.cc/Gm7LBQyT/pexels-lukas-669615.jpg"
-                alt="project-img"
-              />
-            </div>
-            <div className="project-desc">
-              <h3>ASME EFx</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Libero, asperiores! Nihil aliquam veniam nesciunt similique,
-                eligendi omnis ex saepe nobis optio sequi facere repellat
-                sapiente illo! Consequatur libero officia obcaecati?
-              </p>
-              <div className="project-btn">
-                <button>Know More</button>
-              </div>
-            </div>
-          </div>
-          <div className="project-content" id="project2">
-            <div className="project-desc">
-              <h3>ASME EFx</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Libero, asperiores! Nihil aliquam veniam nesciunt similique,
-                eligendi omnis ex saepe nobis optio sequi facere repellat
-                sapiente illo! Consequatur libero officia obcaecati?
-              </p>
-              <div className="project-btn">
-                <button>Know More</button>
-              </div>
-            </div>
-            <div className="project-img">
-              <img
-                src="https://i.postimg.cc/Gm7LBQyT/pexels-lukas-669615.jpg"
-                alt="project-img"
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <div className="project-container">
-        <h1>PROJECTS</h1>
+        <h1 className="homeHeader">PROJECTS</h1>
 
         <div
           className="event-container secondary d-flex flex-wrap"
@@ -277,7 +234,7 @@ const HomePage = () => {
       {/* ==============================Events Section ======================= */}
 
       <div className="events-container">
-        <h1>EVENTS</h1>
+        <h1 className="homeHeader">EVENTS</h1>
 
         <div
           className="event-container secondary d-flex flex-wrap"
@@ -334,7 +291,7 @@ const HomePage = () => {
 
       {/* =============================== Achievements ======================= */}
       <div className="acheivements-container">
-        <h1>ACHEIVEMENTS</h1>
+        <h1 className="homeHeader">ACHEIVEMENTS</h1>
 
         <Swiper
           autoplay={{
@@ -405,7 +362,7 @@ const HomePage = () => {
 
       {/* ================================ Gallery ========================== */}
       <div className="gallery-container">
-        <h1>GALLERY</h1>
+        <h1 className="homeHeader">GALLERY</h1>
         <div className="grid-container">
           <div className="grid-item full-width" style={{ objectFit: "cover" }}>
             <img
@@ -455,7 +412,7 @@ const HomePage = () => {
           </div>
 
           <div className="team-content">
-            <h1>OUR TEAM</h1>
+            <h1 className="homeHeader">OUR TEAM</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex
               quas nulla quaerat, deserunt placeat illo odio consequuntur
@@ -470,22 +427,19 @@ const HomePage = () => {
 
       {/* ===========================Sponsors============================ */}
       <div className="sponsors">
-        <h4>OUR SPONSORS</h4>
-        <div className="sponsors-logo">
-          <img src="https://i.postimg.cc/Qxc0Kzhd/pngwing-com.png" alt="logo" />
-          <img
-            src="https://i.postimg.cc/bY7mJPX5/pngwing-com-1.png"
-            alt="logo"
-          />
-          <img
-            src="https://i.postimg.cc/QN96htz5/pngwing-com-3.png
-          "
-            alt="logo"
-          />
-          <img
-            src="https://i.postimg.cc/g2d4VK2q/pngwing-com-2.png"
-            alt="logo"
-          />
+        <h1 className="homeHeader">OUR SPONSORS</h1>
+        <div className="sponsors-div">
+          <div className="sponsors-content">
+            <h3>Software Sponsor</h3>
+            <div className="sponsors-img">
+              <img src={ansys} alt="ansys" />
+              <img src={solidworks} alt="SolidWorks" />
+            </div>
+          </div>
+          <div className="sponsors-content" id="sponsors-con">
+            <h3>Valuable Sponsor</h3>
+            <img src={trail} alt="trackAndTrail" />
+          </div>
         </div>
       </div>
     </Layout>
