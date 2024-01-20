@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
 
 /* 
 font-family: 'Playfair Display', serif;
@@ -7,6 +8,14 @@ font-family: 'Poppins', sans-serif; */
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
+
+.homeHeader{
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    /* font-size:300%; */
+    margin-bottom: 1.5rem;
+
+}
 
 
 /* ===========================HeroSection======================= */
@@ -20,8 +29,6 @@ font-family: 'Roboto', sans-serif; */
     content: "";
     background-image: url('https://i.postimg.cc/wvMVf9DR/Untitled.jpg');
 
-
-
     background-size: cover;
     background-position: center;
 
@@ -32,7 +39,7 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
     text-align: center;
     background-color: black;
-    overflow: hidden;
+    /* overflow: hidden; */
     filter: blur(2px);
     margin: 0;
     padding: 0;
@@ -97,7 +104,7 @@ font-family: 'Roboto', sans-serif; */
     right: 0;
     padding: 0;
     margin: 0;
-    z-index: 0;
+    z-index: 10;
 }
 
 @media (min-width:1000px) and (max-width:1300px) {
@@ -215,13 +222,11 @@ font-family: 'Roboto', sans-serif; */
     flex-direction: column;
     color: white;
     /* color: black; */
-    background-color: rgb(10, 10, 10);
+     background-color: black;
     /* height: 1; */
     align-items: center;
     /* font-family: 'Playfair Display', serif; */
-    
-
-    
+      
     padding-top: 100px;
 }
 
@@ -348,7 +353,8 @@ font-family: 'Roboto', sans-serif; */
     flex-direction: column;
     background-color: black;
     color: white;
-    padding: 50px 0px;
+    padding: 100px 0px;
+    
 }
 
 .events-container h1 {
@@ -734,34 +740,63 @@ font-family: 'Roboto', sans-serif; */
 
 /* ========================== Sponsors ======================== */
 .sponsors {
-    padding: 100px;
-    background-color: black;
+    padding: 100px 0px;
+    background: rgb(0, 0, 0);
     color: grey;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    /* height: 50vh; */
+
 
 }
+.sponsors-content{
+     
+    background: linear-gradient(to bottom, rgb(57, 56, 56), rgb(88, 88, 88));
+    
+    width: 85vw;
+    margin: 40px 0px;
+    padding: 20px 0px;
 
-.sponsors-logo {
     display: flex;
-    flex-direction: row;
-    /* width: 100vw; */
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;    
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(57, 56, 56), rgb(88, 88, 88));
+    position: relative;
 }
 
-.sponsors-logo img {
-    height: 100px;
-    /* height: 6vw; */
-    /* padding: 10px 10px; */
-    margin: 30px 10px;
+ 
 
+.sponsors-content:hover{
+    background: linear-gradient(rgba(44, 204, 232, 0.4) -6.4%, rgba(174, 174, 174, 0.15) 99.89%);
+    transform: scale(1.03);
 }
 
-@media (max-width: 800px) {
-    .sponsors-logo img {
-        height: 50px;
-    }
+.sponsors-img{
+    width: 40%; 
+    margin-bottom: 10px;
+}
+
+.sponsors-div img:hover{
+    cursor: pointer;
+}
+
+.sponsors-content h3{
+    font-weight: bolder;
+    color: white;
+}
+
+.sponsors-content img{
+    height: 100%;
+    width: 50%;
+    padding: 15px 15px;
+}
+
+#sponsors-con img{
+    width: 25%;
+    padding: 30px 15px;
+
 }
