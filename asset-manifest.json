@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/ASME-Website/static/css/main.dde3bc21.css",
-    "main.js": "/ASME-Website/static/js/main.2cd1eec8.js",
+    "main.css": "/ASME-Website/static/css/main.f179a933.css",
+    "main.js": "/ASME-Website/static/js/main.79fc81ca.js",
     "static/js/787.4c617d16.chunk.js": "/ASME-Website/static/js/787.4c617d16.chunk.js",
-    "static/media/bgvideo.webm": "/ASME-Website/static/media/bgvideo.905c4beb508d63c0578e.webm",
+    "static/media/Ansys.png": "/ASME-Website/static/media/Ansys.e2b2d2313ac577523de7.png",
+    "static/media/Solidworks.svg": "/ASME-Website/static/media/Solidworks.992bcc4c77b558d1da88b353470e6475.svg",
     "index.html": "/ASME-Website/index.html",
-    "main.dde3bc21.css.map": "/ASME-Website/static/css/main.dde3bc21.css.map",
-    "main.2cd1eec8.js.map": "/ASME-Website/static/js/main.2cd1eec8.js.map",
+    "main.f179a933.css.map": "/ASME-Website/static/css/main.f179a933.css.map",
+    "main.79fc81ca.js.map": "/ASME-Website/static/js/main.79fc81ca.js.map",
     "787.4c617d16.chunk.js.map": "/ASME-Website/static/js/787.4c617d16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dde3bc21.css",
-    "static/js/main.2cd1eec8.js"
+    "static/css/main.f179a933.css",
+    "static/js/main.79fc81ca.js"
   ]
 }
