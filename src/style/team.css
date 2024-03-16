@@ -1,15 +1,18 @@
  
 
 .team-btn{
-     margin: 20px 50px;
+    margin: 20px 50px;
     padding: 10px 10px;
-    border-radius: 15px;
+    border-radius: 10px;
+    background-color: white;
     
 }
 .team-btn:hover{
     /* background-color: rgb(223, 71, 71); */
     background: linear-gradient(to right, rgb(3, 3, 109), rgb(46, 46, 122));
     color: white;
+    cursor: pointer;
+    transform: scale(1.1);
 
 }
 
@@ -75,8 +78,10 @@
     padding-bottom: 100px;
 }
 .team-main h1{
-    margin-top: 1em;
+    margin: 1em;
+    font-size: 4rem;
     color: red;
+    font-weight: bolder;
 }
  
 .team-row{
@@ -111,6 +116,33 @@
     background-color: white;
 }
 
+.special-member-card{
+    box-shadow: 0 0 1.2em rgb(175, 172, 177);
+     
+    /* border: 2px solid black; */
+    padding: 1.5em 1em;
+    border-radius: 0.6em;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.854);
+     
+
+}
+
+.special-member-card .teamContent-img{
+    width: 8em;
+    height: 8em;
+    /* background-color: #a993ff; */
+    background-color: rgba(255, 251, 36, 0.648);
+    padding: 0.25em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+
+}
+
 .team-card .teamContent-img{
     width: 8em;
     height: 8em;
@@ -130,6 +162,10 @@
     font-weight: 500;
 }
 
+.special-member-card h3{
+    font-weight: 500;
+}
+
 .team-card p{
     font-weight: 300;
     text-transform: uppercase;
@@ -137,7 +173,19 @@
     letter-spacing: 2px;
 }
 
+.special-member-card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+
+}
+
 .team-card li{
+    list-style: none;
+}
+
+.special-member-card li{
     list-style: none;
 }
 
@@ -159,6 +207,7 @@
 
 .team-card:hover{
     background: linear-gradient(#6045ea, #8567f7);
+ 
     color: white;
     box-shadow: 0 0 2.2em rgb(175, 172, 177);
 }
@@ -167,4 +216,17 @@
     transform: scale(1.2);
 }
  
+.special-member-card:hover{
+    /* background: linear-gradient(#6045ea, #8567f7); */
+    /* background: linear-gradient(#fad52ee4, #ffd61fd2); */
+    /* background: linear-gradient(#ffd700, #ffcc00); */
+    background: linear-gradient(135deg, #ffd700, #ffcc00);
+    color: white;
+    box-shadow: 0 0 2.2em rgb(255, 246, 122);
+
+}
+
+.special-member-card:hover .teamContent-img{
+    transform: scale(1.2);
+}
  

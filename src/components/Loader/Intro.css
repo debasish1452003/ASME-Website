@@ -1,0 +1,125 @@
+.main-intro{
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+     /* background: linear-gradient(to bottom, rgb(0, 52, 104), rgb(31, 95, 255)); */
+     background: linear-gradient(to bottom, rgba(21, 21, 21, 0.331), rgb(48, 45, 45));
+     background:  rgba(21, 21, 21, 0.331);
+
+}
+
+.introPage{
+    box-sizing: border-box;
+    /* background: rgb(3, 3, 38); */
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.videodiv{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background-color: black; */
+    margin: 0; /* Reset margins */
+  padding: 0;
+ 
+}
+.intro-video{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+ 
+}
+
+.intro-video video{
+    height: 100%;
+    width: 100%;
+  
+    /* object-fit: cover; */
+}
+
+.intro-img{
+    height: 12vmax ;
+    width: 15vmax;
+    opacity: 0;
+    animation: appear 2s  forwards;
+    display: flex;
+    flex-direction: column;
+     
+    text-align: center;
+    text-justify: center;
+    justify-content: center;
+    align-items: center;
+    color:  white;
+
+    
+ 
+}
+
+.intro-img h1{
+  font-weight: bolder;
+   font-size: 6vmax;
+   color: #014bad;
+   
+
+   text-shadow: 
+    0 1px 0   rgba(0, 57, 131, 0.993),
+    0 2px 0   rgba(0, 57, 131, 0.993),
+    0 3px 0   rgba(0, 57, 131, 0.993),
+    0 4px 0   rgba(0, 57, 131, 0.993),
+    0 5px 0   rgba(0, 57, 131, 0.993),
+    0 6px 0   rgba(0, 57, 131, 0.993),
+    0 7px 0   rgba(0, 57, 131, 0.993),
+    0 8px 0   rgba(0, 57, 131, 0.993);
+     
+    /* 1px 15px 10px rgba(16, 16, 16, 0.3),
+    1px 20px 10px rgba(16, 16, 16, 0.3),
+    1px 25px 10px rgba(16, 16, 16, 0.3),
+    1px 30px 10px rgba(16, 16, 16, 0.3); */
+  
+   
+}
+
+.introPage{
+  justify-content: center;
+   align-items: center;
+   padding: 0 auto;
+}
+ 
+
+.intro-img img{
+    height: 100%;
+    width: 100%;
+    filter: blur(1)
+}
+
+
+@keyframes appear {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: scale(0); /* Start with half size */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+      transform: scale(1); /* End with full size */
+    }
+  }
+  @keyframes pop {
+    0% {
+      transform: scale(0);
+    }
+    80% {
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

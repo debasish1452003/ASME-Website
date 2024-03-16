@@ -3,7 +3,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 
-const Layout = ({ children, title, description, keywords, author }) => {
+const Layout = ({
+  children,
+  title,
+  description,
+  keywords,
+  author,
+  isScrolled,
+}) => {
   return (
     <div>
       <Helmet>
@@ -13,7 +20,7 @@ const Layout = ({ children, title, description, keywords, author }) => {
         <meta name="author" content={author} />
         <title>{title}</title>
       </Helmet>
-      <Header />
+      <Header isScrolled={isScrolled} />
 
       <main style={{ minHeight: "80vh" }}>{children}</main>
       <Footer />

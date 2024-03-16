@@ -136,17 +136,40 @@ background-clip: text;
 
 
 /* ========================== Header(Navbar) ================== */
-.navbar {
+.navbars{
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
-  background: black !important;
+  
+  /* background-color: rgba(255, 255, 255, 0) !important; */
   /* background: linear-gradient(to right, black, #777) !important; */
   line-height: 26px;
   text-transform: uppercase;
-  box-shadow: 0 8px 6px -6px black;
+  background-color: rgba(255, 255, 255, 0) !important;
+
   --webkit-box-shadow: 0 8px 6px -6px background-color !important;
   /* border-bottom: 0px solid #F8F8FF !important; */
 }
+
+.navbar-scrolled{
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;  
+  background: black !important;
+  line-height: 26px;
+  text-transform: uppercase; 
+  box-shadow: 0 8px 6px -6px black;
+  --webkit-box-shadow: 0 8px 6px -6px background-color !important;
+}
+
+/* .navbar{
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;  
+  background: black !important;
+  line-height: 26px;
+  text-transform: uppercase; 
+  box-shadow: 0 8px 6px -6px black;
+  --webkit-box-shadow: 0 8px 6px -6px background-color !important;
+
+} */
 
 .container-fluid {
   position: relative;
@@ -188,10 +211,12 @@ background-clip: text;
 /* ==============================Page not found====================== */
 .pnf {
   display: flex;
-  min-height: 65vh;
+  min-height: 80vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
+   
 }
 
 .pnf-title {

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ isScrolled }) => {
   const location = useLocation();
 
   const isHomeActive =
@@ -9,7 +9,11 @@ const Header = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav
+        className={`navbar navbar-expand-lg bg-body-tertiary fixed-top ${
+          isScrolled ? "navbar-scrolled" : "navbars"
+        }`}
+      >
         <div className="container-fluid">
           <Link to="#" className="navbar-brand">
             <div className="overlay-div">
