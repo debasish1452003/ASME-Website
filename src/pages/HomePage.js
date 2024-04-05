@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "../components/Layouts/Layout";
 import Design from "../components/Layouts/Design";
 import Loader from "../components/Loader/Intro";
+
 import Announcement from "./HomePage/Announcement";
 import ProjectCard from "./HomePage/ProjectCard";
 import EventsCard from "./HomePage/EventsCard";
@@ -10,17 +11,23 @@ import GallaryCard from "./HomePage/GallaryCard";
 import OurTeamsCard from "./HomePage/OurTeamsCard";
 import SponsorsCard from "./HomePage/SponsorsCard";
 
-const HomePage = (reload) => {
-  const [loader, setLoader] = useState(true);
+const HomePage = ({ state, state2 }) => {
+  let states = state;
+
+  console.log(state);
+  const [loader, setLoader] = useState(states);
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoader(false);
-    }, 6000);
+    if (loader) {
+      const timer = setTimeout(() => {
+        setLoader(false);
+      }, 6000);
 
-    return () => clearTimeout(timer);
-  }, []);
+      return () => clearTimeout(timer);
+    }
+  }, [loader]);
 
   window.onscroll = () => {
     setIsScrolled(window.scrollY === 0 ? false : true);

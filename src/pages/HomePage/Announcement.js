@@ -14,10 +14,12 @@ import {
   Navigation,
   Pagination,
 } from "swiper/modules";
+import Design from "../../components/Layouts/Design";
 const Announcement = () => {
   return (
     <>
       <div className="notify">
+        <Design />
         <h1 className="homeHeader">ANNOUNCEMENT</h1>
         <Swiper
           autoplay={{

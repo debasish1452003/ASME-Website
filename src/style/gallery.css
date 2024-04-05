@@ -1,0 +1,39 @@
+ .close-tag:hover{
+    background: tomato !important;
+    color: black;
+    border-radius: 50%;
+ }
+
+ .prev-tag{
+    position: absolute;
+    left: 10vmax;
+    padding: 1vmin;
+    border-radius: 30%;
+    color: black;
+    transition: 0.4s ease;
+ }
+
+ .prev-tag:hover{
+    color: white;
+    background-color: black;
+ }
+
+ .prev-tagmod{
+    display: none;
+    pointer-events: none;
+ }
+
+ .next-tag{
+    position: absolute;
+    right: 10vmax;
+    padding: 1vmin;
+    border-radius: 30%;
+    color: black;
+    transition: 0.4s ease;
+     
+ }
+
+ .next-tag:hover{
+    color: white;
+    background-color: black;
+ }

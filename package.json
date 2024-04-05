@@ -6,6 +6,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -16,6 +17,7 @@
     "react-elastic-carousel": "^0.11.5",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.12.0",
+    "react-responsive-masonry": "^2.2.0",
     "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.12.2",
