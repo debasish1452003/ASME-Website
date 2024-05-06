@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const EventsCard = () => {
+  const navigate = useNavigate();
   const eventdata = [
     {
       id: "event1",
@@ -31,6 +33,11 @@ const EventsCard = () => {
         "ASME's interactive workshops and sessions provide a dynamic learning platform for emerging engineers. Engage in collaborative experiences with hands-on software demos and professional development workshops. These sessions are designed to help you build a robust resume and skill set, offering valuable insights to navigate the early stages of your career successfully. Excel as a new engineer with the practical knowledge gained from these interactive and enriching opportunities.",
     },
   ];
+
+  const handleClick = (id) => {
+    navigate(`/events#${id}`);
+  };
+
   return (
     <>
       <div className="events-container">
@@ -81,7 +88,14 @@ const EventsCard = () => {
                   </div>
                 </div>
                 <div className="events-btn">
-                  <button className="btn">Know More</button>
+                  <button
+                    className="btn"
+                    onClick={() => {
+                      handleClick(id);
+                    }}
+                  >
+                    Know More
+                  </button>
                 </div>
               </div>
             );
