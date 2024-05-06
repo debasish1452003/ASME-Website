@@ -33,7 +33,6 @@ const Aboutus = () => {
             <div className="bg">
               <div className="aboutUsContent">
                 <p>
-                  {" "}
                   ASME NITR Chapter stands out as one of the most active
                   technical society in the eastern zone of India. The ASME NIT
                   Rourkela Chapter is a student chapter of the American Society
@@ -55,12 +54,12 @@ const Aboutus = () => {
                   horizons for the students to stand out globally.
                 </p>
               </div>
-              <div className="right_content">
+              {/* <div className="right_content">
                 <h4 className="h4_left">
                   Passion in the new Human powered vehicle
                 </h4>
                 <h4 className="h4_right">High-Quality design craft</h4>
-              </div>
+              </div> */}
             </div>
             <div className="lowerContent">
               <h1>Message from Facad</h1>
@@ -75,8 +74,8 @@ const Aboutus = () => {
                 </div>
                 <div className="facadImg">
                   <img src="https://media.istockphoto.com/id/610021016/photo/young-professor.jpg?s=1024x1024&w=is&k=20&c=31wIaMAYYLkD8lKo-CbTWkcn-c7zVKePwT8WZ4dtF4o=" />
-                  <h3>NAME </h3>
-                  <h4>Assistant Professor | Dept. of Mechanical Engg.</h4>
+                  <h3>Dr. Suman Gosh </h3>
+                  <h4>Assistant Professor | Dept. of Mechanical Engineering</h4>
                 </div>
               </div>
             </div>

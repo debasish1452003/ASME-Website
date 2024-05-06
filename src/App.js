@@ -7,6 +7,7 @@ import Team from "./pages/Team";
 import Events from "./pages/Events";
 import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery.js";
+import Achievement from "./pages/Achievement.js";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Events" element={<Events />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/achievements" element={<Achievement />} />
       </Routes>
     </>
   );

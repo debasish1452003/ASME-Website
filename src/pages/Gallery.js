@@ -24,7 +24,7 @@ const Gallery = () => {
     const interval = setInterval(() => {
       // Shuffle the images randomly
       setImages([...images.sort(() => Math.random() - 0.5)]);
-    }, 18000000);
+    }, 500000);
 
     return () => clearInterval(interval);
   }, [images]);
@@ -118,7 +118,7 @@ const Gallery = () => {
                     position: "absolute",
                     top: "2vmax",
                     right: "3vmax",
-                    objectFit: "contain",
+                    objectFit: "cover",
                     // borderRadius: "50%",
                     height: "2vmax",
                     width: "2vmax",
@@ -165,15 +165,17 @@ const Gallery = () => {
             >
               <ResponsiveMasonry
                 columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-                style={{ padding: "6vmax 0", backgroundColor: "white" }}
+                style={{ padding: "8vmax 0", backgroundColor: "white" }}
               >
-                <Masonry gutter="5px">
+                <Masonry gutter="8px">
                   {images.map((image, i) => (
                     <img
                       key={i}
                       src={image}
                       style={{
-                        width: "100%",
+                        width: "32vmax",
+                        height: "20vmax",
+                        // width: "100%",
                         display: "block",
                         cursor: "pointer",
                       }}

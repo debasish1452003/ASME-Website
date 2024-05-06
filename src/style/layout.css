@@ -100,7 +100,8 @@ background-clip: text;
 
 .footer-content-img img{
   margin: 0px 20px;
-  filter: invert(100%) brightness(100%) contrast(100%); /* Invert colors */
+  filter: invert(100%) brightness(100%) contrast(100%);
+   /* Invert colors */
   background-color: white; /* Set a white background */
   display: inline-block;  
 }

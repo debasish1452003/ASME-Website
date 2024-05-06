@@ -18,9 +18,19 @@ const OurTeamsCard = () => {
           <div className="team-content">
             <h1 className="homeHeader">OUR TEAM</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ex
-              quas nulla quaerat, deserunt placeat illo odio consequuntur
-              perferendis eum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              sapiente excepturi aliquid exercitationem voluptate? Ab,
+              recusandae sit? Consectetur, dolore! Culpa officiis accusamus
+              expedita quo numquam. Nihil dolorum sint modi, odit est similique,
+              numquam excepturi alias eius reprehenderit minima, tempore
+              consectetur consequuntur laborum laudantium quam eaque illum
+              pariatur nesciunt sequi ab sit. Quibusdam sunt praesentium
+              eveniet! Illum quasi aperiam veniam quo voluptatum recusandae
+              mollitia officia vitae, dignissimos odit natus beatae quibusdam,
+              facere necessitatibus vero amet molestiae qui ad dolorum sed
+              numquam cupiditate tempore. Quod cupiditate, quas sit quos autem,
+              cum minus id natus voluptas temporibus, eum voluptatibus aut
+              magnam reprehenderit ullam.
             </p>
             <div className="teams-btn">
               <button onClick={() => navigate("/Our-Team")}>Know Us</button>

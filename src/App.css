@@ -3,6 +3,11 @@
 }
 *{
   box-sizing: border-box;
+  /* ::-webkit-scrollbar {
+    display: none;  
+    
+  } */
+  scrollbar-width: 2px;
 }
   
 .App-logo {

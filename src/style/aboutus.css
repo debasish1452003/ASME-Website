@@ -20,72 +20,112 @@
   font-weight: 900;
 }
 .bg {
-  position: relative;
-  height: 80vh;
-  width: 100vw;
+   
+  width: 100%;
+  padding: 5em 0;
   display: flex;
-}
-.aboutUsContent {
+  flex-direction: row;
+   
+} 
+
+.aboutUsContent { 
+  display: flex;
   font-family: "Montserrat", sans-serif;
-  padding: 7vw 10vw 10vw 10vw;
-  width: 60%;
-  position: absolute;
+  margin: 0 6vmax;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   color: white;
+  text-align: justify;
 }
+
 .aboutUsContent h1 {
   font-size: 3vw;
-  padding-bottom: 10%;
   font-weight: 500;
 }
+
 .aboutUsContent p {
   font-size: 1vw;
   font-weight: 100;
 }
+
 .bg .right_content {
+  position: relative;
   font-size: 1.5vw;
   display: flex;
-  padding: 10vw;
-  padding-top: 15vw;
-  padding-left: 60vw;
-  width: 50vw;
+  flex-direction: row; 
+   width: 40%;
+   justify-content: center;
+   align-items: center;
 }
-.bg .right_content .h4_left {
-  width: 12vw;
+
+.right_content::before{
+  content: "";
+  background-image: url("https://i.postimg.cc/D0m3pHj6/icons8-infinity-100.png");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
   position: absolute;
-  color: white;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
-.bg .right_content .h4_right {
-  padding-left: 20vw;
-  width: 30vw;
-  position: absolute;
-  color: white;
+
+
+.bg .right_content .h4_left { 
+  color: white;  
+  padding: 4em 2em;
 }
+
+.bg .right_content .h4_right { 
+  color: white;
+  padding: 4em 2em;
+}
+
 .lowerContent {
+  /* border: 2px solid red; */
   background-color: black;
-  height: 60vh;
-  width: 100vw;
+   
+  /* width: 100vw; */
   color: white;
+  /* margin: 4rem 0; */
+  margin-bottom: 10rem;
 }
+
 .lowerContent h1 {
   padding: 0 0 20px 10vw;
   font-family: "Montserrat", sans-serif;
   font-size: 3vw;
   font-weight: 500;
 }
+
 .messageRow {
-  display: grid;
-  grid-template-columns: 1fr 40vw;
+   display: flex;
+   flex-direction: row;
+   text-align: justify;
 }
+
 .facadContent {
-  padding-left: 10vw;
-  width: 70%;
+  padding: 6vw 4vw;
+  width: 50%;
   color: white;
   font-size: 1vw;
   font-weight: 400;
 }
-.facadImg img {
-  width: 70%;
+
+
+.facadImg{
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.facadImg img {
+  width: 30vmax;
+}
+
 .facadImg h3 {
   padding-top: 1.5vh;
 }

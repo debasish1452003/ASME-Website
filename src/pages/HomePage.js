@@ -60,7 +60,7 @@ const HomePage = ({ state, state2 }) => {
             <EventsCard />
 
             {/* =============================== Achievements ======================= */}
-            <AcheivementsCard />
+            {/* <AcheivementsCard /> */}
 
             {/* ================================ Gallery ========================== */}
             <GallaryCard />

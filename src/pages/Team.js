@@ -57,7 +57,12 @@ const Team = () => {
               img: "https://i.postimg.cc/J7vnynJB/hemant.png",
               special: true,
             },
-            { name: "Pranay Sharma", role: "Manager", img: "" },
+            {
+              name: "Pranay Sharma",
+              role: "Manager",
+              img: "https://i.postimg.cc/VL3x9FpF/Pranay.jpg",
+              special: true,
+            },
             {
               name: "Rahul Kumar Baral",
               role: "Chassis subsystem lead",
@@ -67,7 +72,7 @@ const Team = () => {
             {
               name: "Amit Kumar Sahoo",
               role: "Vehicle dynamics lead",
-              img: "",
+              img: "https://i.postimg.cc/ZqmX25TB/Amit.jpg",
               special: true,
             },
             {
@@ -206,13 +211,13 @@ const Team = () => {
             {
               name: "Ayush Kumar Nayak",
               role: "Vice-Captain",
-              img: "",
+              img: "https://i.postimg.cc/FRr5ds85/IMG20230403130618-1.jpg",
               special: true,
             },
             {
               name: "Sriharsha Mishra",
               role: "Aerodynamics Subsystem Lead",
-              img: "",
+              img: "https://i.postimg.cc/tCwjSbZW/SRIHARSHA-MISHRA.jpg",
               special: true,
             },
             {
@@ -272,13 +277,13 @@ const Team = () => {
             {
               name: "Archana Moharana",
               role: "Creative Head",
-              img: "",
+              img: "https://i.postimg.cc/yYkKyxd7/A.jpg",
               special: true,
             },
             {
               name: "Debasish Rana",
               role: "Web Dev Head",
-              img: "",
+              img: "https://i.postimg.cc/wxP9yxvp/IMG20230114163238.jpg",
               special: true,
             },
             {
@@ -417,6 +422,13 @@ const Team = () => {
           ],
         },
       ],
+    },
+  ];
+
+  const ach = [
+    {
+      id: "1",
+      title: "",
     },
   ];
 

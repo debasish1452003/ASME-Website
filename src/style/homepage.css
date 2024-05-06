@@ -28,6 +28,7 @@ font-family: 'Roboto', sans-serif; */
 .page::before {
     content: "";
     background-image: url('https://i.postimg.cc/wvMVf9DR/Untitled.jpg');
+    /* background-image: url('https://i.postimg.cc/ZKg3KWgg/Designer.jpg'); */
 
     background-size: cover;
     background-position: center;
@@ -155,9 +156,11 @@ font-family: 'Roboto', sans-serif; */
     flex-direction: column;
     align-items: center;
     font-family: 'Playfair Display', serif;
-    background: black;
+    background: black; 
     color: whitesmoke;
-    padding-top: 60px;
+    
+    /* padding-top: 60px; */
+    padding: 4em 0;
 }
 
 .notify .swiper {
@@ -227,10 +230,20 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
     /* font-family: 'Playfair Display', serif; */
       
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    padding: 4em 0;
+
+    content: "";
+    /* background-image: url('https://i.postimg.cc/yYvjLYfz/2691.jpg'); */
+    background-image: url('https://i.postimg.cc/nzDX0W51/5447242.jpg');
+    background-size: cover;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+   
 }
 
-.project-decs {
+/* .project-decs {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -238,8 +251,8 @@ font-family: 'Roboto', sans-serif; */
     justify-content: center;
     padding: 1em 1em;
     overflow: hidden;
-    height: 200px;
-}
+     
+} */
 
 .project-card {
     box-shadow: 0 0px 5px 1px #e3e1db;
@@ -249,26 +262,52 @@ font-family: 'Roboto', sans-serif; */
     width: 25%;
     margin: 2em 2em;
     background: rgb(145, 145, 145);
-
+    transition: 0.3s ease-in-out;
 }
 
 .project-card:hover {
     box-shadow: 0 0px 20px 2px #e3e1db;
+    cursor: pointer;
     transform: scale(1.03);
     /* transform: scale(0.8); */
 }
-.project-img{
-    height: 16rem;
-}
+ 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .project-card:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .overlay h2,
+  .overlay p,
+  .overlay a {
+    margin: 10px; /* Adjust spacing as needed */
+  }
 
+ 
 
-.project-btn button {
+/* .project-btn button {
      
     background: linear-gradient(to right, black, grey);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 0.5em 1em;  
 }
+
 .project-btn {
     margin: 10px 0px;
 }
@@ -276,10 +315,11 @@ font-family: 'Roboto', sans-serif; */
 .project-btn button:hover {
     background: linear-gradient(to left, black, grey);
     color: white;
-}
+} */
 
 
 @media (min-width:750px) and (max-width: 1215px){
+
     .project-decs h2{
         font-size:larger;
         font-weight: bold;
@@ -287,6 +327,7 @@ font-family: 'Roboto', sans-serif; */
     .project-decs p{
         font-size:small;
     }
+
     .project-img{
         height: 10rem;
     }
@@ -296,18 +337,20 @@ font-family: 'Roboto', sans-serif; */
     .project-decs p{
         font-size: xx-small;
     }
+
     .project-decs h2{
         font-size: small;
         font-weight: bold;
     }
-     
+
     .project-img{
         height: 7rem;
     }
+
     .project-decs{
         height: 100px;
     }
-    
+
     .project-btn{
         font-size: xx-small;
     }
@@ -344,17 +387,24 @@ font-family: 'Roboto', sans-serif; */
 
 }
 
-
 /* ================================Events========================= */
 
 .events-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    /* background-color: black; */
     color: white;
-    padding: 100px 0px;
-    
+    padding: 4em 0px;
+    content: "";
+     
+    /* background-image: url('https://i.postimg.cc/yYvjLYfz/2691.jpg'); */
+    background-image: url('https://i.postimg.cc/T1WmwcWP/25859.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+   
 }
 
 .events-container h1 {
@@ -367,6 +417,8 @@ font-family: 'Roboto', sans-serif; */
     width: 25%;
     margin: 2em 2em;
     background: rgb(145, 145, 145);
+    transition: 0.3s ease-in-out;
+   
 }
 
 .event-card:hover {
@@ -408,13 +460,15 @@ font-family: 'Roboto', sans-serif; */
     .events-decs h2{
         font-size:larger;
         font-weight: bold;
-    }
+    }   
     .events-decs p{
         font-size:small;
     }
+
     .event-img{
         height: 10rem;
     }
+
 }
 
 @media (min-width: 500px) and (max-width: 750px){
@@ -472,8 +526,10 @@ font-family: 'Roboto', sans-serif; */
 
 /* ============================Achievements Section =========================== */
 .acheivements-container {
+    padding: 4em 0;
     height: 80vh;
     background-color: black;
+     
     color: white;
     display: flex;
     flex-direction: column;
@@ -494,6 +550,7 @@ font-family: 'Roboto', sans-serif; */
     font-size: 18px;
     max-width: 400px;
     background: #000;
+    
     /* height: 100%; */
     max-height: 100%;
 }
@@ -546,7 +603,7 @@ font-family: 'Roboto', sans-serif; */
         background-size: cover;
         width: 100%;
     }
-}
+} 
 
 /* ================================ Gallery ================================= */
 
@@ -554,10 +611,19 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     align-items: center;
     flex-direction: column;
+    content: "";
+    /* background-image: url('https://i.postimg.cc/MpHh8FRx/Designer-1.jpg'); */
+    background-image: url('https://i.postimg.cc/FzwQRkKV/3392075.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    /* height: 150vh; */
 
 
     /* background: linear-gradient(to right, whitesmoke, #ccc); */
-    padding: 60px 0px;
+    padding: 4em 0px;
     background-color: white;
 
 
@@ -654,48 +720,74 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 4em 0;
+    background-image: url('https://i.postimg.cc/9XqJzP2T/green-smooth-wooden-textured-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .team-box {
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    background-image: linear-gradient(to right, #005e5e, #19a8b2);
+    
+    color: black;
     display: flex;
     flex-direction: row;
     width: 90vw;
     margin: 0px auto;
     justify-content: center;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px  #35e3e3;
+    overflow: hidden;
 }
 
+
+
 .team-img {
-    width: 50%;
-    padding: 30px 50px;
+    width: 40%;
+    /* padding: 30px 50px; */
     /* width: 20px; */
 }
 
 .team-img img {
-    width: 80%;
+    width: 100%;
+    height: 100%;
 }
 
 .team-content {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 2em 4em;
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif; 
+     
 }
+ 
 
+
+ 
 .teams-btn button {
     padding: 10px 30px;
-    color: black;
-
-    background: linear-gradient(to right, grey, rgb(255, 253, 253));
+   
     font-family: Arial, Helvetica, sans-serif;
     /* font-weight: bolder; */
+    color: white;
+    background: linear-gradient(to right, black, grey);
+    border: none;
 }
 
 .teams-btn button:hover {
-    color: white;
-    background: linear-gradient(to right, black, grey);
+    color: black;
+
+    /* background: linear-gradient(to right, grey, rgb(255, 253, 253)); */
+    background: linear-gradient(to right, rgba(0, 255, 255, 0.507), rgb(3, 238, 255));
+    border: none;
+   
 
 }
 
@@ -740,15 +832,15 @@ font-family: 'Roboto', sans-serif; */
 
 /* ========================== Sponsors ======================== */
 .sponsors {
-    padding: 100px 0px;
+    padding: 6em 0px;
     background: rgb(0, 0, 0);
+  
     color: grey;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     /* height: 50vh; */
-
 
 }
 .sponsors-content{
