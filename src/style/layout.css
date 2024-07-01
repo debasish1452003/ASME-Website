@@ -145,6 +145,7 @@ background-clip: text;
   /* background: linear-gradient(to right, black, #777) !important; */
   line-height: 26px;
   text-transform: uppercase;
+  z-index: 100;
   background-color: rgba(255, 255, 255, 0) !important;
 
   --webkit-box-shadow: 0 8px 6px -6px background-color !important;
@@ -206,6 +207,13 @@ background-clip: text;
   border-bottom: 2px solid white;
   color: white !important;
 
+}
+
+@media (max-width: 991px){
+  .overlay-div img {
+  height: 0%;
+  width: 0%;
+}
 }
 
 

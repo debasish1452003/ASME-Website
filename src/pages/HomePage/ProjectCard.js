@@ -66,16 +66,7 @@ const ProjectCard = () => {
         >
           {projectdata.map(({ title, id, description, img }) => {
             return (
-              <div
-                className="project-card"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  flexDirection: "column",
-                  height: "22rem",
-                  width: "22rem",
-                }}
-              >
+              <div className="project-card">
                 <div
                   className="project-img"
                   style={{

@@ -474,7 +474,7 @@ const Team = () => {
                   <div class="dropdown">
                     <>
                       <button
-                        class="btn btn-secondary dropdown-toggle"
+                        class="btn btn-primary dropdown-toggle"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
@@ -541,14 +541,13 @@ const Team = () => {
                               return (
                                 <>
                                   {maintoggled === id ? (
-                                    <div className="team-row">
+                                    <div className="team-rows team-flow">
                                       {members.map(
                                         ({ name, role, img, special }) => {
                                           return (
                                             <>
                                               <div className="team-row">
                                                 <div className="team-col">
-                                                  {/* <div className="team-card"> */}
                                                   <div
                                                     className={`${
                                                       special
@@ -565,7 +564,7 @@ const Team = () => {
 
                                                     <h3>{name}</h3>
                                                     <p>{role}</p>
-                                                    <ul className="team-icon">
+                                                    {/* <ul className="team-icon">
                                                       <li>
                                                         <Link
                                                           to="#"
@@ -590,7 +589,7 @@ const Team = () => {
                                                           <ion-icon name="logo-linkedIn"></ion-icon>
                                                         </Link>
                                                       </li>
-                                                    </ul>
+                                                    </ul> */}
                                                   </div>
                                                 </div>
                                               </div>

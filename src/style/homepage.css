@@ -96,7 +96,7 @@ font-family: 'Roboto', sans-serif; */
         content: "WE MAKE HUMAN POWERED VEHICLES"
     }
 }
-
+ 
 #tsparticles {
     position: absolute;
     top: 0;
@@ -132,19 +132,33 @@ font-family: 'Roboto', sans-serif; */
 }
 
 @media (max-width: 700px) {
+
+    .page::before{
+        height: 50vh;
+    }
+    
     .content {
-        bottom: 180px;
-        width: 50%;
-        margin: -35px 0px;
+        /* /* bottom: 10vmax; */
+        width: 50vw; 
+        font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    width: 50vw;
+
+    position: absolute;
+
+ 
+    right: 100px;
+ 
+    color: white;
+         
     }
 
     .content p {
-        font-size: 10px;
-
+        font-size: 0.94vmax;
     }
 
     .content h1 {
-        font-size: 50px;
+        font-size: 7vmax;
 
     }
 }
@@ -263,6 +277,12 @@ font-family: 'Roboto', sans-serif; */
     margin: 2em 2em;
     background: rgb(145, 145, 145);
     transition: 0.3s ease-in-out;
+
+    display: "flex";
+    align-Items: "center";
+    flex-Direction: "column";
+    height: "22rem";
+    width: "22rem";
 }
 
 .project-card:hover {
@@ -287,6 +307,9 @@ font-family: 'Roboto', sans-serif; */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease; /* Smooth transition effect */
   }
+  .overlay h3{
+    font-size: 2vmax;
+  }
   
   .project-card:hover .overlay {
     opacity: 1; /* Show overlay on hover */
@@ -298,24 +321,6 @@ font-family: 'Roboto', sans-serif; */
     margin: 10px; /* Adjust spacing as needed */
   }
 
- 
-
-/* .project-btn button {
-     
-    background: linear-gradient(to right, black, grey);
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    padding: 0.5em 1em;  
-}
-
-.project-btn {
-    margin: 10px 0px;
-}
-
-.project-btn button:hover {
-    background: linear-gradient(to left, black, grey);
-    color: white;
-} */
 
 
 @media (min-width:750px) and (max-width: 1215px){
@@ -361,8 +366,16 @@ font-family: 'Roboto', sans-serif; */
 }
 
 @media (max-width: 500px){
+
+    .event-container{
+        display: flex;
+        flex-direction: row;
+    }
+     
+    
     .project-img{
-        height: 5rem;
+        height: 0px;
+        width: 0px;
     }
     .project-decs p{
         font-size: 6px;
@@ -772,9 +785,11 @@ font-family: 'Roboto', sans-serif; */
 
  
 .teams-btn button {
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
+    padding: 0.5vmax 1.5vmax;
    
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: small;
     /* font-weight: bolder; */
     color: white;
     background: linear-gradient(to right, black, grey);
@@ -788,7 +803,6 @@ font-family: 'Roboto', sans-serif; */
     background: linear-gradient(to right, rgba(0, 255, 255, 0.507), rgb(3, 238, 255));
     border: none;
    
-
 }
 
 @media (max-width: 900px) {
@@ -808,8 +822,13 @@ font-family: 'Roboto', sans-serif; */
 }
 
 @media (max-width: 600px) {
+
+    .teams-btn button{
+        font-size: xx-small;
+    }
+
     .team-box {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -826,6 +845,10 @@ font-family: 'Roboto', sans-serif; */
         width: 100%;
         display: flex;
         align-items: center;
+        padding: 0.5em 1.5em;
+    }
+    .team-content p{
+        font-size: 1vmax;
     }
 
 }
@@ -849,7 +872,7 @@ font-family: 'Roboto', sans-serif; */
     
     width: 85vw;
     margin: 40px 0px;
-    padding: 20px 0px;
+    padding: 15px 0px;
 
     display: flex;
     flex-direction: column;
@@ -868,8 +891,17 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .sponsors-img{
-    width: 40%; 
-    margin-bottom: 10px;
+    width: 40vmax; 
+    /* margin-bottom: 10px; */
+}
+
+.sponsor-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40vmax;
+    height: 10vmax;
 }
 
 .sponsors-div img:hover{
@@ -881,14 +913,14 @@ font-family: 'Roboto', sans-serif; */
     color: white;
 }
 
-.sponsors-content img{
+.sponsors-img img{
     height: 100%;
     width: 50%;
-    padding: 15px 15px;
+    padding: 0.5vmax 2vmax;
 }
 
-#sponsors-con img{
+/* #sponsors-con img{
     width: 25%;
     padding: 30px 15px;
 
-}
+} */

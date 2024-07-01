@@ -59,11 +59,12 @@ body {
 }
 
 .event-image{
-    width: 40%;
-    height: 100%;
+    width: 35vmax;
+    height: 20vmax;
     
     object-fit: cover;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    
      
 }
 
@@ -71,6 +72,8 @@ body {
     /* border: 2px solid green; */
     width: 60%;
     margin-left: 10%;
+    align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
@@ -78,6 +81,7 @@ body {
     /* border: 2px solid red; */
     width: 90%;
     align-items: center;
+    justify-content: center;
     display: flex;
     margin-bottom: 15vmax;
     /* margin-left: 0; */
@@ -108,18 +112,34 @@ body {
     .heading h1 {
         font-size: 4rem;
     }
-    .main-content{
+    /* .main-content{
         display: grid;
         grid-template-columns: 1fr;
-    }
+    } */
     .main-content .event {
         padding: 2rem;
-        width: 80vw;
+        /* width: 80vw; */
+    }
+    .event-section{
+        flex-direction: column;
+       
+    }
+    .event-cont{
+        width: 90%;
+        padding-top: 3vmax;
+        margin-left: 0;
+      
+        
+         
     }
     .event h3 {
-        padding-bottom: 1rem;
+        padding-bottom: 0.6rem;
+         margin: 0 auto;
+         text-align: center;
+         
+        font-size: 2rem;
     }
     .event p {
-        font-size: .8rem;
+        font-size: 0.9rem;
     }
 }

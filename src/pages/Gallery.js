@@ -24,7 +24,7 @@ const Gallery = () => {
     const interval = setInterval(() => {
       // Shuffle the images randomly
       setImages([...images.sort(() => Math.random() - 0.5)]);
-    }, 500000);
+    }, 250000);
 
     return () => clearInterval(interval);
   }, [images]);
@@ -101,16 +101,22 @@ const Gallery = () => {
           <Layout title={"Gallery"} isScrolled={isScrolled}>
             {data.img && (
               <div
+                className="gallery-im"
                 style={{
-                  marginTop: "4vmax",
                   width: "100%",
                   height: "100vh",
                   background: "black",
                   position: "fixed",
+                  top: "0",
+                  // boxSizing: "content-box",
+
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                   overflow: "hidden",
+                  background:
+                    'url("https://i.postimg.cc/2y9DBgqY/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg")',
+                  zIndex: "10000",
                 }}
               >
                 <div
@@ -118,16 +124,17 @@ const Gallery = () => {
                     position: "absolute",
                     top: "2vmax",
                     right: "3vmax",
-                    objectFit: "cover",
+                    // objectFit: "cover",
                     // borderRadius: "50%",
-                    height: "2vmax",
-                    width: "2vmax",
+
                     // background: "red",
                     textAlign: "center",
+                    textJustify: "center",
                     cursor: "pointer",
-                    padding: "2px 2px",
-                    color: "black",
-                    background: "white",
+                    // padding: "1px 1px",
+                    color: "white",
+
+                    background: "black",
 
                     transition: "background-color 0.6s ease-out",
                   }}
@@ -160,22 +167,29 @@ const Gallery = () => {
               className="gallery-contain"
               style={{
                 padding: "10px ",
+
                 backgroundColor: "white",
               }}
             >
               <ResponsiveMasonry
-                columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-                style={{ padding: "8vmax 0", backgroundColor: "white" }}
+                columnsCountBreakPoints={{ 350: 3, 750: 2, 900: 5 }}
+                style={{
+                  color: "black",
+                  padding: "10vmax 0",
+                  background:
+                    'url("https://i.postimg.cc/SNX6Y83F/white-blank-background-texture-design-element.jpg")',
+                }}
               >
-                <Masonry gutter="8px">
+                <h1>OUR MEMORIES</h1>
+                <Masonry gutter="1vmax">
                   {images.map((image, i) => (
                     <img
                       key={i}
                       src={image}
                       style={{
                         width: "32vmax",
-                        height: "20vmax",
-                        // width: "100%",
+                        height: "15vmax",
+                        width: "100%",
                         display: "block",
                         cursor: "pointer",
                       }}

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Roboto:wght@900&display=swap');
+
+ 
  .close-tag:hover{
     background: tomato !important;
     color: black;
@@ -7,15 +11,29 @@
  .prev-tag{
     position: absolute;
     left: 10vmax;
-    padding: 1vmin;
-    border-radius: 30%;
-    color: black;
+    
+    /* padding: 1vmin; */
+    width: 4vmax;
+    
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.605);
     transition: 0.4s ease;
+    /* background-color: black; */
+    background: transparent;
+     transition: all 0.2s ease-in;
+    
+    border: none;
+ }
+
+ .prev-tag svg{
+   height: 4vmax;
+   width: 2vmax;
  }
 
  .prev-tag:hover{
     color: white;
-    background-color: black;
+    background: linear-gradient(to bottom left, blue, red);
+    
  }
 
  .prev-tagmod{
@@ -26,13 +44,73 @@
  .next-tag{
     position: absolute;
     right: 10vmax;
-    padding: 1vmin;
-    border-radius: 30%;
-    color: black;
-    transition: 0.4s ease;    
+    
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.605);
+    transition: 0.4s ease;   
+    /* background-color: black;  */
+    background: transparent;
+    width: 4vmax;
+    border:none;
+     
+ }
+ .next-tag svg{
+   height: 4vmax;
+   width: 2vmax;
  }
 
  .next-tag:hover{
     color: white;
-    background-color: black;
+    background: linear-gradient(to bottom right, blue, red);
+ }
+
+ .gallery-contain h1{
+   font-size: 5vmax;
+   font-family:   'Roboto', sans-serif;
+   font-weight: 800;
+   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+   text-align: center;
+    text-justify: center;
+    margin-bottom: 6vmax;
+ }
+
+ .close-tag svg{
+   width: 100%;
+   height: 100%;
+   padding: 0.5vmax 0.5vmax;
+ }
+
+ .close-tag{
+   width: 2.7vmax;
+   height: 2.7vmax;
+ }
+
+ .gallery-contain img:hover{
+   transform: scale(1.05);
+   transition: transform 0.3s ease-in-out;
+
+ }
+
+ @media (max-width: 1200px){
+   .close-tag svg{
+      padding: 0.1vmax 0.1vmax;  
+   }
+
+   .close-tag{
+      height: 3.5vmax;
+      width: 3.5vmax;   
+   }
+
+   .prev-tag{
+      left: 4vmax;
+      bottom:25vmax; 
+      background: white;
+      color: black;
+   }
+   .next-tag{
+      color: black;
+      right: 4vmax;
+      bottom:25vmax; 
+      background: white;
+   }
  }

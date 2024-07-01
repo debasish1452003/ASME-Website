@@ -18,7 +18,9 @@ const SponsorsCard = () => {
           </div>
           <div className="sponsors-content" id="sponsors-con">
             <h3>Valuable Sponsor</h3>
-            <img src={trail} alt="trackAndTrail" />
+            <div className="sponsor-img">
+              <img src={trail} alt="trackAndTrail" />
+            </div>
           </div>
         </div>
       </div>
