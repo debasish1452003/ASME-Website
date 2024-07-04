@@ -1,6 +1,7 @@
 import "./App.css";
 import HomePage from "./pages/HomePage";
-import Aboutus from "./pages/Aboutus";
+// import Aboutus from "./pages/Aboutus";
+import All from "./pages/All.js";
 import { Routes, Route } from "react-router-dom";
 import Pagenotfound from "./pages/Pagenotfound";
 import Team from "./pages/Team";
@@ -19,13 +20,14 @@ function App() {
           element={<HomePage state={true} state2={false} />}
         />
 
-        <Route path="/aboutus" element={<Aboutus />} />
+        {/* <Route path="/aboutus" element={<Aboutus />} /> */}
         <Route path="*" element={<Pagenotfound />} />
         <Route path="/Our-Team" element={<Team />} />
         <Route path="/Events" element={<Events />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/achievements" element={<Achievement />} />
+        <Route path="/all" element={<All />} />
       </Routes>
     </>
   );
