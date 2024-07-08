@@ -14,8 +14,11 @@ function App() {
   return (
     <>
       <Routes>
-        {/* <Route path="/" element={<HomePage state={false} state2={true} />} /> */}
         <Route path="/" element={<HomePage state={true} state2={false} />} />
+        <Route
+          path="/ASME-Website"
+          element={<HomePage state={false} state2={true} />}
+        />
         {/* <Route
           path="/ASME-Website"
           element={<HomePage state={true} state2={false} />}

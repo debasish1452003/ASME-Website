@@ -38,7 +38,7 @@ const Header = ({ isScrolled }) => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <NavLink
-                  to="/"
+                  to="/ASME-Website"
                   className={isHomeActive ? "nav-link active" : "nav-link"}
                 >
                   Home
