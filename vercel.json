@@ -1,6 +1,8 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
-    ]
-  }
-  
+  "public": "public",
+  "ignore": ["node_modules", ".git", ".gitignore"],
+  "rewrites": [
+    { "source": "/manifest.json", "destination": "/public/manifest.json" }
+  ]
+}
+
