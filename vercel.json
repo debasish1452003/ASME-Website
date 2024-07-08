@@ -1,8 +1,15 @@
 {
-  "public": "public",
-   
-  "rewrites": [
-    { "source": "/manifest.json", "destination": "/public/manifest.json" }
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/manifest.json", "dest": "/manifest.json" },
+    { "src": "/api/(.*)", "dest": "https://api.example.com/$1" }
   ]
 }
-
