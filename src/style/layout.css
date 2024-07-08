@@ -152,6 +152,10 @@ background-clip: text;
   /* border-bottom: 0px solid #F8F8FF !important; */
 }
 
+
+
+ 
+
 .navbar-scrolled{
   font-family: 'Poppins', sans-serif;
   font-size: 17px;  
@@ -173,15 +177,21 @@ background-clip: text;
 
 } */
 
+.navbar-toggler-icon{
+   
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .container-fluid {
   position: relative;
-  height: 60px;
+  height: 4vmax;
+  
 }
 
 .overlay-div {
   position: absolute;
-  top: 5px;
-  left: 15px;
+   top: 0px;
+  /* left: 15px; */
   background-color: white;
   /* padding: 10px;   */
   /* border: 1px solid #ccc;   */
@@ -210,9 +220,35 @@ background-clip: text;
 }
 
 @media (max-width: 991px){
-  .overlay-div img {
-  height: 0%;
-  width: 0%;
+   
+
+  .container-fluid{
+    --bs-gutter-x: 0;
+    height: 6vmax;
+     
+  }
+
+  .navbar-nav{
+    background-color: black;
+    width: 100vw;
+     
+   /* margin-top: -5px; */
+  }
+
+  .overlay-div{
+    height: auto;
+    /* overflow: hidden; */
+  }
+.navbar{
+  background-color: black !important;
+}
+  
+  .overlay-div  {
+    top: 0;
+    left: 0;
+  height: 6vmax;
+   
+  
 }
 }
 

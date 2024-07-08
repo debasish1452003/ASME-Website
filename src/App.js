@@ -9,6 +9,7 @@ import Events from "./pages/Events";
 import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery.js";
 import Achievement from "./pages/Achievement.js";
+import Loader from "./components/Loader/Intro";
 
 function App() {
   return (
@@ -19,10 +20,6 @@ function App() {
           path="/ASME-Website"
           element={<HomePage state={false} state2={true} />}
         />
-        {/* <Route
-          path="/ASME-Website"
-          element={<HomePage state={true} state2={false} />}
-        /> */}
 
         {/* <Route path="/aboutus" element={<Aboutus />} /> */}
         <Route path="*" element={<Pagenotfound />} />
@@ -31,7 +28,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/achievements" element={<Achievement />} />
-        <Route path="/all" element={<All />} />
+        {/* <Route path="/all" element={<Loader />} /> */}
       </Routes>
     </>
   );
