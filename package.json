@@ -2,7 +2,6 @@
   "name": "web-ui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://debasish1452003.github.io/ASME-Website",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
