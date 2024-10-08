@@ -45,7 +45,7 @@ const HomePage = ({ state, state2 }) => {
             <div className="page">
               <Design />
               <div className="content">
-                <h1 className="gradient-text">ASME</h1>
+                <h1 className="gradient-text">ASME-NITRKL</h1>
                 <p className="change-text"></p>
               </div>
             </div>

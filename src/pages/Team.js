@@ -500,7 +500,7 @@ const Team = () => {
                           </>
                         );
                       })}
-                    </ul>
+                    </ul> 
                   </div>
                 </div>
               </div>
