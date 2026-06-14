@@ -5,7 +5,7 @@ import Loader from "../components/Loader/Loader";
 
 const Pagenotfound = () => {
   const [loading, setLoading] = useState(true);
-  const [isScrolled, setIsScrolled] = useState(true);
+  const [isScrolled] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
@@ -19,7 +19,13 @@ const Pagenotfound = () => {
         <Loader />
       ) : (
         <>
-          <Layout isScrolled={isScrolled}>
+          <Layout
+            title="Page not found | ASME NITR"
+            description="The requested ASME NIT Rourkela page could not be found."
+            canonicalPath={null}
+            noIndex
+            isScrolled={isScrolled}
+          >
             <div className="pnf">
               <h1 className="pnf-title">404</h1>
               <h2 className="pnf-heading">Oops ! Page Not Found</h2>

@@ -2,6 +2,7 @@
   "name": "web-ui",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://debasish1452003.github.io/ASME-Website",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
@@ -22,10 +23,13 @@
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.12.2",
     "swiper": "^11.0.5",
+    "three": "^0.184.0",
     "tsparticles-slim": "^2.12.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "node server/dev.js",
+    "api": "node server/index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -55,5 +59,3 @@
     "gh-pages": "^6.1.0"
   }
 }
-
-

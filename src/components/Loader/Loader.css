@@ -1,76 +1,193 @@
+.LoaderBody {
+  position: fixed;
+  inset: 0;
+  z-index: 18000;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(24, 168, 232, 0.16), transparent 24rem),
+    radial-gradient(circle at 52% 58%, rgba(215, 166, 66, 0.12), transparent 18rem),
+    linear-gradient(135deg, #020409, #07111d 48%, #020409);
+  color: #f4f7fb;
+}
 
- .LoaderBody{
-    width: 100%;
-    height: 100%;
-    display: flex;
-     margin-top: 300px;
-    justify-content: center;
-     
-    background-color: #011015;
- }
+.LoaderBody::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 70px 70px;
+  mask-image: radial-gradient(circle at center, black 0%, transparent 72%);
+  animation: loaderGrid 9s linear infinite;
+}
 
- .LoaderContainer{
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
+.LoaderAura {
+  position: absolute;
+  width: min(58vw, 620px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(141, 220, 255, 0.14);
+  border-radius: 50%;
+  box-shadow:
+    0 0 90px rgba(24, 168, 232, 0.14),
+    inset 0 0 80px rgba(215, 166, 66, 0.06);
+  animation: loaderAura 2.8s ease-in-out infinite;
+}
 
- .LoaderRing{
-    width: 200px;
-    height: 200px;
-    border: 0px solid #011015;
-    border-radius: 50%;
-    position: absolute;
- }
+.LoaderContainer {
+  position: relative;
+  z-index: 1;
+  width: min(520px, calc(100vw - 32px));
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+  text-align: center;
+}
 
- .LoaderRing:nth-child(1){
-    border-bottom-width: 8px;
-    border-color: rgb(255,0,255);
-    animation: rotate1 2s linear infinite;
- }
+.LoaderMark {
+  position: relative;
+  width: 188px;
+  height: 188px;
+  display: grid;
+  place-items: center;
+}
 
- .LoaderRing:nth-child(2){
-    border-right-width: 8px;
-    border-color: rgb(0, 247, 255);
-    animation: rotate2 2s linear infinite;
- }
+.LoaderOrbit {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(141, 220, 255, 0.34);
+}
 
- .LoaderRing:nth-child(3){
-    border-right-width: 8px;
-    border-color: rgb(0, 255, 13);
-    animation: rotate3 2s linear infinite;
- }
+.LoaderOrbit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #8ddcff;
+  box-shadow: 0 0 20px rgba(141, 220, 255, 0.8);
+}
 
- .LoaderLoading{
-    color: white;
- }
+.orbit-one {
+  transform: rotateX(64deg) rotateZ(18deg);
+  animation: loaderOrbitOne 2.8s linear infinite;
+}
 
- @keyframes rotate1{
-    0%{
-        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-    }
-    100%{
-        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-    }
- }
+.orbit-two {
+  border-color: rgba(215, 166, 66, 0.44);
+  transform: rotateX(58deg) rotateY(28deg) rotateZ(-24deg);
+  animation: loaderOrbitTwo 3.8s linear infinite;
+}
 
- @keyframes rotate2{
-    0%{
-        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-    }
-    100%{
-        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-    }
-    
- }
+.orbit-two::before {
+  background: #d7a642;
+  box-shadow: 0 0 20px rgba(215, 166, 66, 0.8);
+}
 
- @keyframes rotate3{
-    0%{
-        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-    }
-    100%{
-        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-    }
-    
- }
+.LoaderHub {
+  width: 112px;
+  height: 112px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 20%, rgba(255, 255, 255, 0.22), transparent 28%),
+    linear-gradient(145deg, rgba(24, 168, 232, 0.18), rgba(215, 166, 66, 0.1)),
+    rgba(12, 18, 27, 0.84);
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.42rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  background-clip: padding-box;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.88);
+}
+
+.LoaderLoading {
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.LoaderSubcopy {
+  color: rgba(244, 247, 251, 0.58);
+  font-size: 0.86rem;
+}
+
+.LoaderLine {
+  width: min(280px, 64vw);
+  height: 2px;
+  margin-top: 0.45rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.LoaderLine span {
+  display: block;
+  width: 44%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #8ddcff, #d7a642, transparent);
+  animation: loaderLine 1.7s ease-in-out infinite;
+}
+
+@keyframes loaderGrid {
+  to {
+    background-position: 70px 70px;
+  }
+}
+
+@keyframes loaderAura {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 0.82;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes loaderOrbitOne {
+  to {
+    transform: rotateX(64deg) rotateZ(378deg);
+  }
+}
+
+@keyframes loaderOrbitTwo {
+  to {
+    transform: rotateX(58deg) rotateY(28deg) rotateZ(-384deg);
+  }
+}
+
+@keyframes loaderLine {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(260%);
+  }
+}
+
+@media (max-width: 560px) {
+  .LoaderMark {
+    width: 154px;
+    height: 154px;
+  }
+
+  .LoaderHub {
+    width: 96px;
+    height: 96px;
+    font-size: 1.14rem;
+  }
+}

@@ -3,86 +3,91 @@ import Layout from "../components/Layouts/Layout";
 import Loader from "../components/Loader/Loader";
 import "../style/aboutus.css";
 
+const pillars = [
+  "Human-powered vehicle design",
+  "CAD, simulation, and rapid prototyping",
+  "Workshops, mentoring, and technical communication",
+  "Competition culture and knowledge transfer",
+];
+
 const Aboutus = () => {
   const [loading, setLoading] = useState(true);
-  const [isScrolled, setIsScrolled] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 350);
-
+    const timer = setTimeout(() => setLoading(false), 250);
     return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
-          <Layout title={"ASME-NITRKL Aboutus"} isScrolled={isScrolled}>
-            <div className="bgHeading">
-              <img
-                className="bgImage"
-                src="https://images.pexels.com/photos/586570/pexels-photo-586570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
-              <h1>ABOUT US</h1>
-            </div>
+  return loading ? (
+    <Loader />
+  ) : (
+    <Layout
+      title="About ASME NITR | Student Chapter"
+      description="Learn about ASME NIT Rourkela, its student-led culture, technical projects, workshops, competitions, and chapter mission."
+      keywords="about ASME NITR, ASME chapter, NIT Rourkela, student chapter, mechanical engineering society"
+      canonicalPath="/aboutus"
+      isScrolled
+    >
+      <section className="about-page">
+        <div className="page-shell-heading">
+          <p className="eyebrow">Chapter profile</p>
+          <h1>About ASME NITR</h1>
+          <span>
+            A student chapter built around mechanical engineering practice, student leadership,
+            competition readiness, and the culture of building things that move.
+          </span>
+        </div>
 
-            <div className="bg">
-              <div className="aboutUsContent">
-                <p>
-                  ASME NITR Chapter stands out as one of the most active
-                  technical society in the eastern zone of India. The ASME NIT
-                  Rourkela Chapter is a student chapter of the American Society
-                  of Mechanical Engineers (ASME) International, located in the
-                  National Institute of Technology, Rourkela, India. The chapter
-                  was established in 2012 by the students of the 2010 batch. The
-                  chapter aims to promote the science and practice of mechanical
-                  engineering among students by organizing seminars, training
-                  workshops, and awarding prizes. The chapter has been actively
-                  participating in various technical events and competitions.
-                  The chapter is one of the most prominent, active, and dynamic
-                  student sections of ASME International. As a student
-                  organization on campus, our goal is to provide a place for
-                  both networking and information, offering guest speakers,
-                  workshops and more. Its vision is to become a premier
-                  institution for promoting art, science and the practice of
-                  mechanical and multi- disciplinary engineering and the allied
-                  sciences to our diverse communities and opening up new
-                  horizons for the students to stand out globally.
-                </p>
+        <div className="about-grid">
+          <article className="about-story">
+            <p>
+              ASME NITR Chapter is one of the active technical societies of NIT Rourkela and a
+              student chapter of the American Society of Mechanical Engineers International. Founded
+              in 2012 by students of the 2010 batch, the chapter promotes the science and practice of
+              mechanical engineering through seminars, training workshops, competitions, and hands-on
+              technical projects.
+            </p>
+            <p>
+              The chapter creates a place for students to network, learn, prototype, present, and
+              compete. Its larger vision is to open new horizons for students through mechanical and
+              multidisciplinary engineering exposure, while building a durable student-led culture on
+              campus.
+            </p>
+          </article>
+
+          <aside className="about-pillar-card">
+            <p className="eyebrow">What we practice</p>
+            {pillars.map((pillar) => (
+              <div className="pillar-row" key={pillar}>
+                <span />
+                <p>{pillar}</p>
               </div>
-              {/* <div className="right_content">
-                <h4 className="h4_left">
-                  Passion in the new Human powered vehicle
-                </h4>
-                <h4 className="h4_right">High-Quality design craft</h4>
-              </div> */}
-            </div>
-            <div className="lowerContent">
-              <h1>Message from Facad</h1>
-              <div className="messageRow">
-                <div className="facadContent">
-                  As a faculty advisor, I have been privileged to oversee the
-                  growth of ASME Club since 20XX, which are dynamic, innovative,
-                  and versatile. Our club has attracted members who share a deep
-                  passion for Human Powered Vehicles. As we continue to evolve,
-                  I invite all individuals to contribute in any way possible.
-                  towards the success and development of ASME Club.
-                </div>
-                <div className="facadImg">
-                  <img src="https://media.istockphoto.com/id/610021016/photo/young-professor.jpg?s=1024x1024&w=is&k=20&c=31wIaMAYYLkD8lKo-CbTWkcn-c7zVKePwT8WZ4dtF4o=" />
-                  <h3>Dr. Suman Gosh </h3>
-                  <h4>Assistant Professor | Dept. of Mechanical Engineering</h4>
-                </div>
-              </div>
-            </div>
-          </Layout>
-        </>
-      )}
-    </>
+            ))}
+          </aside>
+        </div>
+
+        <div className="advisor-panel">
+          <div>
+            <p className="eyebrow">Faculty guidance</p>
+            <h2>Message from Faculty Advisor</h2>
+            <p>
+              As a faculty advisor, I have been privileged to oversee the growth of ASME Club, which
+              is dynamic, innovative, and versatile. Our club attracts members who share a deep
+              passion for engineering and human-powered vehicles. As we continue to evolve, I invite
+              students and collaborators to contribute to the success and development of ASME Club.
+            </p>
+          </div>
+          <div className="advisor-card">
+            <img
+              src="https://media.istockphoto.com/id/610021016/photo/young-professor.jpg?s=1024x1024&w=is&k=20&c=31wIaMAYYLkD8lKo-CbTWkcn-c7zVKePwT8WZ4dtF4o="
+              alt="Faculty advisor"
+            />
+            <h3>Dr. Suman Gosh</h3>
+            <p>Assistant Professor, Department of Mechanical Engineering</p>
+          </div>
+        </div>
+      </section>
+    </Layout>
   );
 };
 

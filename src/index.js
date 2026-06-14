@@ -5,14 +5,29 @@ import "./style/layout.css";
 import "./style/homepage.css";
 import "./style/team.css";
 import "./style/achievements.css";
+import "./style/professional.css";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
+const basename = (() => {
+  if (process.env.NODE_ENV === "development") {
+    return "/";
+  }
+
+  const publicUrl = process.env.PUBLIC_URL || "/";
+
+  try {
+    return new URL(publicUrl, window.location.origin).pathname || "/";
+  } catch (error) {
+    return "/";
+  }
+})();
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={basename}>
     <React.StrictMode>
       <App />
     </React.StrictMode>
